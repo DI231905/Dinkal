@@ -1,0 +1,895 @@
+/*------home-copy1 -------------*/
+.mobile-head{
+    display: none;
+}
+.mb-follow{
+    display: none!important;
+}
+.sugg_follow .row{
+	margin: 0!important;
+}
+.right-side-main .user-image img {
+    width: 47px;
+    height: 47px;
+    margin: auto;
+}
+.sugg_follow .follow-name {
+    width: 65%;
+    padding-left: 20px;
+}
+.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.follow-name a{
+	color: white;
+}
+.follow-name a:hover{
+	color: white;
+	text-decoration: underline;
+}
+.sugg_follow .follow-btn1{
+	width: 19%;
+}
+
+/*---------- search btn ----------*/
+.search-box_01 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0px 10px rgb(0 0 0 / 20%);
+    display: none;
+    padding: 7px 0px;
+    background: white;
+}
+.search-box_01 input {
+    height: 100%;
+    width: 100%;
+    padding: 15px 40px 15px 20px;
+    border-radius: 0px;
+    color: #67757c;
+    border: none;
+    transition: 0.5s ease-in;
+    position: relative;
+    font-size: 19px;
+}
+.search-box_01 input:focus{
+    outline: none;
+}
+.search-box_01 a {
+    position: absolute;
+    top: 23px;
+    right: 18px;
+    font-size: 17px;
+    color: #ff9400;
+}
+.search-box_01 a:hover{
+    text-decoration: none;
+    color: #ff9400;
+}
+
+
+/*-------- edit-profile-------*/
+.co_profile-edit .nav-tabs{
+    border: unset !important;
+}
+.co_profile-edit .nav-tabs .nav-link {
+    color: #ff9400;
+    background: #fff;
+    position: relative;
+    padding: 11px 10px 11px 10px;
+    border-left: 3px solid #ff9400!important;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: .25rem;
+    border-top: unset!important;
+    border-bottom: unset!important;
+    border-right: unset!important;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 10%);
+}
+.co_profile-edit .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color:#ff9400!important;
+}
+.co_profile-edit .nav-tabs .nav-link:hover{
+    border-left: 3px solid #ff9400!important;
+    border-top: unset!important;
+    border-bottom: unset!important;
+    border-right: unset!important;
+}
+.co_profile-edit .nav1{
+    display: block!important;
+    border: unset!important;
+}
+.co_profile-edit .nav-link.active {
+    color: #fff!important;
+    background: #ff9400!important;
+    border-left: 3px solid #ff9400;
+}
+.co_profile-edit .nav-link::before {
+    content: '';
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #ff9400!important;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.co_profile-edit .nav-link.active::before {
+    opacity: 1;
+}
+.co_profile-edit .tab-content {
+    padding-left: 40px;
+    border-left: 1px solid grey;
+}
+.profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.pro_11 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+.profile-pic input {
+    display: none;
+}
+.profile-pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .35);
+    border-radius: 50%;
+    z-index: 1;
+}
+.profile-pic .-label {
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    margin: 0;
+    font-size: 25px;
+    position: relative;
+    z-index: 999;
+}
+.profile-pic:hover .-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 10000;
+    color: #fafafa;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+.profile-pic p{
+    position: relative;
+    z-index: 999999;
+    color: white;
+    display: block;
+    margin: 0px 0px 0px 23px;
+    font-size: 20px;
+}
+.user-input {
+    margin-top: 40px;
+}
+.user_01{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.user_01 label{
+    width: 25%;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.user_01 input {
+    width: 70%;
+    height: 40px;
+    font-size: 15px;
+    padding: 0px 20px;
+    margin-left: 20px;
+    color: white;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+.user_01 input:focus{
+    outline: none;
+}
+.user_01 textarea{
+    width: 70%;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: white;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+.user_01 textarea:focus{
+    outline: none;
+}
+.user-input .next {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+
+/*-------comment-page ----------*/
+.all-comment .user-image {
+    display: block;
+    align-items: flex-start;
+}
+.all-comment .caption-text {
+    width: 85%;
+    margin:0px 0px 0px 12px;
+    text-align: left;
+}
+.all-comment p {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    opacity: 0.7;
+    margin: 10px 0px 0px;
+}
+
+/*------*/
+.tab-img {
+    width: 31.33%;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+#tile-1 .slider {
+    z-index: 1;
+}
+.follow-name a {
+    color: #ff9400!important;
+}
+.user_01 label {
+    text-transform: capitalize;
+}
+.new-user {
+    width: 189px;
+}
+
+/*------ index-page ---------------*/
+.bottomMenu.show+ a.scroll_1.scroll-down {
+      opacity: 0;
+   }
+   .scroll_1 i {
+      bottom: 10px;
+      left: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      overflow: hidden;
+      position: fixed;
+      text-decoration: none;
+      font-size: 29px;
+      z-index: 9;
+      color: white;
+      background: #ff9400;
+      opacity: 1;
+      text-align: center;
+      font-weight: 500;
+      animation: mover 1s infinite alternate;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 30%), 0 0 40px rgb(0 0 0 / 10%) inset;
+   }
+   @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+   }
+   .body {
+      height: 70%;
+   }
+   .bottomMenu {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+      transition: all .5s;
+   }
+   .show .modal-3{
+      display: block!important;
+      opacity: 1!important;
+   }
+   .hide .modal{
+      display: none!important;
+   }
+   .hide {
+      opacity:0;   
+   }
+   .show {
+      opacity:1; 
+   }
+   .modal-footer1 {
+      background: #ff9400;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+      z-index: 99999;
+   }
+   .modal-footer1 ul{
+      padding: 0;
+      margin: 0;
+   }
+   .modal-footer1 li{
+      display: inline-block;
+      margin: 0px 10px;
+   }
+   .modal-footer1 li a {
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+   }
+   .modal-footer1 li a:hover {
+      color: white;
+      text-decoration: none;
+   }
+   .bottomMenu.hide #return-to-top {
+      opacity: 0;
+   }
+   .bottomMenu.show #return-to-top {
+      opacity: 1;
+      position: relative;
+      z-index: 999999;
+   }
+   #return-to-top i {
+      z-index: 9999999!important;
+      bottom: 42px;
+   }
+   .bottomMenu .modal{
+      background: rgb(0 0 0 / 70%)!important;
+   }
+   #myID .modal .close-modal{
+      z-index: 9999999!important;
+   }
+   .sign_link{
+      color: #ff9400;
+      cursor: pointer;
+   }
+   .forgot, .or{
+      cursor: pointer;
+   }
+   #user-page-1 .co_sign-up {
+      display: block;
+   } 
+   .modal-3 .modal-dialog{
+      max-width: 415px!important;
+   }
+   .modal-3 .modal-content {
+      border-radius: 25px!important; 
+   }
+   .login-section .num_1 {
+       width: 76%;
+       margin-left: 1px!important;
+   }
+   .container2 {
+       margin-bottom: 31px;
+   }
+   button.next.next1 {
+      bottom: 14px;
+   }
+   .close{
+      cursor: pointer;
+   }
+
+
+
+/*------responsive ----------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1260px){
+	.sugg_follow .follow-name {
+        width: 62%;
+        padding-left: 15px;
+    }
+    .modal-2 .modal-dialog.modal-dialog-centered {
+        top: 38px!important;
+        width: 38%;
+    }
+    .user-profile .dropdown-menu.show {
+        position: absolute;
+        left: -25px!important;
+        top: -3px!important;
+    }
+    .modal-1 .modal-dialog {
+        max-width: 21%!important;
+        top: -19%;
+    }
+    .modal-report .modal-dialog.modal-dialog-centered {
+        top: -12%;
+    }
+    .modal-6 .modal-dialog {
+        top: -30%;
+        left: 9%;
+    }
+    .desk_sugg .sugg_follow .follow-name {
+        width: 71%;
+    }
+    .desk_sugg .sugg_follow .follow-btn1 {
+        width: 19%;
+        text-align: end;
+    }
+    .desk_sugg .follow-btn1 button {
+        padding: 5px 22px;
+    }
+    .user_01 label {
+        width: 24%;
+    }
+    .bottomMenu .modal-3 .modal-dialog {
+        top: 15%;
+    }
+    .container_1 .logo_1 {
+        width: 40%;
+    }
+    .modal-3 .close-modal {
+        top: 19%;
+        right: -28px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .logo {
+        width: 67%;
+    }
+    .menu li {
+        margin: 0px 12px;
+    }
+    .search-box {
+        padding: 4px 15px;
+        width: 209px;
+    }
+    .notification {
+        text-align: right;
+    }
+    .user-profile .dropdown-menu{
+        left: -63px!important;
+        top: 5px!important;
+    }
+    .modal-2 .modal-dialog.modal-dialog-centered {
+        top: 38px!important;
+        width: 49%;
+    }
+    .modal-1 .modal-dialog {
+        max-width: 27%!important;
+        top: -10%;
+    }
+    .sidebar-title h4 {
+        margin: 0;
+    }
+    .right-side-main .user-image img {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+    }
+    .sugg_follow .follow-name {
+        width: 59%;
+        padding-left: 12px;
+    }
+    .follow-btn1 button {
+        padding: 2px 8px;
+    }
+    .follow-btn1 a{
+        font-size: 13px;
+    }
+    .user-images img {
+        width: 85px;
+        height: 85px;
+    }
+    .modal-6 .modal-dialog {
+        top: -29%;
+        left: 17%;
+    }
+    .all-suggestion .sugg_follow .follow-name {
+        width: 67%;
+    }
+    .all-suggestion .sugg_follow .follow-btn1 {
+        text-align: right;
+    }
+    .all-suggestion .follow-btn1 button {
+        padding: 2px 16px;
+    }
+    .co_profile-edit .nav-tabs .nav-link {
+        padding: 7px 9px 9px 5px;
+        font-size: 15px;
+    }
+    .co_profile-edit .tab-content {
+        padding-left: 20px;
+    }
+    .user_01 label {
+        width: 22%;
+    }
+    .user_01 input {
+        padding: 0px 10px;
+    }
+    .user-input .next {
+        height: 40px;
+    }
+    .container_1 .logo_1 {
+        width: 48%;
+    }
+    .modal-3 .close-modal {
+        top: 7%;
+        right: -28px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .container_1 .logo_1 {
+        width: 63%;
+    }
+    .modal-3 .close-modal {
+        top: 7%;
+        right: -28px;
+    }
+    .modal-3 .modal-dialog {
+        top: 2%;
+        max-width: 330px!important;
+        margin: auto;
+    }
+    .intro-menu .buttons button {
+        margin-right: 10px;
+    }
+    .intro-menu .buttons {
+        margin-left: 0;
+    }
+    .co_sign-in {
+        padding: 20px 25px;
+    }
+    .heading .text_1 {
+        font-size: 46px;
+    }
+    .sign-again {
+        margin: 15px 0px 12px;
+    }
+    .sign-again h3 {
+        font-size: 18px;
+    }
+    .sign-again p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .sign-in-form1 {
+        margin-top: 25px;
+    }
+    .text {
+        margin: 0px auto 11px;
+    }
+    button.next {
+        height: 40px;
+        font-size: 18px;
+    }
+    .face-login {
+        width: 46%;
+    }
+    .face {
+        width: 59px;
+    }
+    .co_thumps1 {
+        height: 650px;
+    }
+    .login-logo {
+        width: 36%;
+    }
+    .co_sign-up h3 {
+        font-size: 15px;
+        letter-spacing: 7px;
+    }
+    .line {
+        margin: 0px auto 50px;
+    }
+    .tab-login {
+        margin: 0px 24px 40px!important;
+    }
+    .tab-login .nav-item {
+        margin-right: -14px;
+    }
+    .login-section input {
+        width: 70%;
+    }
+    .co_thumps1 button.next {
+        bottom: 76px;
+    }
+    .modal-3 .close-modal {
+        top: 1%;
+        right: -7px;
+    }
+    .Tab2 input {
+        width: 82%!important;
+        margin-left: 0px!important;
+    }
+    .desk-header{
+        display: none!important;
+    }
+    .mobile-head{
+        display: block;
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu li {
+        margin: 0px 10px;
+    }
+    ul.menu li i {
+        font-size: 19px;
+    }
+    .user-profile img {
+        width: 33px;
+        height: 33px;
+    }
+    .user-profile .dropdown-menu{
+        left: -57px!important;
+        top: -3px!important;
+    }
+    .modal-2 .modal-dialog.modal-dialog-centered {
+        top: 38px!important;
+        width: 100%;
+    }
+    .m_section1 .slick-prev {
+        left: -10px !important;
+    }
+    .m_section1 .slick-next {
+        right: -10px !important;
+    }
+    .user-image img {
+        width: 45px;
+        height: 45px;
+    }
+    .user-image h3 {
+        margin-left: 12px;
+    }
+    .co_right{
+        display: none;
+    }
+    .modal-1 .modal-dialog {
+        max-width: 55%!important;
+        top: 1%;
+    }
+    .modal-6 .modal-dialog {
+        top: -23%;
+        left: 35%;
+        max-width: 230px!important;
+    }
+    .user-images img {
+        width: 90px;
+        height: 90px;
+    }
+    .user-images .u_name{
+        display: none;
+    }
+    .desk-follow{
+        display: none;
+    }
+    .mb-follow{
+        display: block!important;
+    }
+    .user-edit{
+        display: none;
+    }
+    .setting1 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .user-images h2 {
+        margin: 0;
+    }
+    .set-profile {
+        margin-top: 8px;
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+    }
+    .mb-follow{
+        border-left: unset;
+        border-right: unset;
+        margin: 22px 0px 0px;
+    }
+    .follow-section {
+        margin: 11px 0px;
+    }
+    .count-up {
+        text-align: center;
+    }
+    .user-section2 {
+        margin-top: 0px;
+    }
+    .user-section2 .tabs label {
+        padding: 10px 36px;
+    }
+    .tab .row{
+        margin: 0!important;
+    }
+    .inner-follow .col-2{
+        padding-right: 0!important;
+    }
+    .user-image_1 img {
+        width: 48px;
+        height: 48px;
+    }
+    .follow-btn1 button {
+        padding: 7px 8px;
+        font-size: 13px;
+        margin-right: 11px;
+    }
+    .all-suggestion .sugg_follow .follow-name {
+        padding-left: 15px;
+    }
+    .all-suggestion .sugg_follow .follow-btn1 {
+        text-align: right;
+    }
+    .all-suggestion .follow-btn1 button {
+        margin-right: 0;
+    }
+    .all-comment .caption-text {
+        width: 83%;
+    }
+    .caption-text a {
+        font-size: 16px;
+    }
+    .caption-text span {
+        font-size: 13.5px;
+        line-height: 22px;
+    }
+    .comment-section2 .comment-fillup {
+        padding: 12px 10px;
+        margin-bottom: 10px;
+    }
+    .comment-fillup textarea {
+        width: 87%;
+    }
+    .comment-fillup input {
+        width: 13%;
+    }
+    .comment-section2 .user-image img {
+        width: 35px;
+        height: 35px;
+    }
+    .co_profile-edit .nav1 {
+        display: flex!important;
+    }
+    .nav-tabs .nav-item {
+        width: 162px;
+        margin-right: 10px;
+    }
+    .co_profile-edit .nav-link::before {
+        top: 49px;
+        right: 50%;
+        transform: translateY(-50%) rotate(90deg);
+    }
+    /*.profile-pic {
+        justify-content: flex-start;
+    }*/
+    .co_profile-edit .tab-content {
+        padding-left: 0px;
+        border-left: unset;
+        margin-top: 15px;
+    }
+    .user_01 label {
+        width: 24%;
+        font-size: 14px;
+    }
+    .pro_11 {
+        width: 75px;
+        height: 75px;
+    }
+    .profile-pic .-label {
+        height: 75px;
+        width: 75px;
+    }
+    .profile-pic img {
+        width: 75px;
+        height: 75px;
+    }
+    .user_01 input {
+        padding: 0px 10px;
+    }
+    .user-input .next {
+        height: 45px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    .menu li {
+        margin: 0px 8px;
+    }
+    .user-profile img {
+        width: 30px;
+        height: 30px;
+    }
+    .story-1 .your {
+        width: 64px;
+        height: 94px;
+    }
+    .story-1 img {
+        width: 64px;
+        height: 94px;
+    }
+    .feed-image img {
+        height: 350px;
+    }
+    .modal-dialog{
+        position: relative;
+        top: 7%;
+    }
+    .share-all p{
+        display: none;
+    }
+    .user-images img {
+        width: 75px;
+        height: 75px;
+    }
+    .user-section2 .tabs label {
+        padding: 10px 26px;
+    }
+    .tab-img img {
+        height: 100px;
+    }
+    .modal-6 .modal-dialog {
+        top: -11%;
+        left: 33%;
+        max-width: 205px!important;
+    }
+    .user-image_1 img {
+        height: 44px;
+    }
+    .all-suggestion .sugg_follow .follow-name {
+        padding-left: 11px;
+    }
+    .all-suggestion .sugg_follow .follow-btn1 {
+        width: 18%;
+    }
+    .all-suggestion .user-image_1 img {
+        width: 44px;
+    }
+    .all-comment .caption-text {
+        width: 80%;
+    }
+    .comment-fillup textarea {
+        width: 85%;
+    }
+    .comment-fillup input {
+        width: 15%;
+    }
+    .nav-tabs .nav-item {
+        width: auto;
+        margin-right: 10px;
+    }
+    .user_01 label {
+        width: 23%;
+    }
+    .inner-new {
+        padding: 12px;
+    }
+    .inner-accept button {
+        width: 70px;
+    }
+    .inner-new img {
+        height: 45px;
+    }
+
+}
+
+
+

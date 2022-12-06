@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOOP</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+	<link rel="icon" href="image/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+.image-gallery {
+    width: 100%;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+.image-gallery .image-box {
+    position: relative;
+    background-color: #d7d7d8;
+    overflow: hidden;
+}
+.image-gallery .image-box:nth-child(10n + 1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.image-gallery .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/*----*/
+.main-galler_slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255 255 255 / 40%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+.main-galler_slider.opacity_1{
+	position: fixed;
+	opacity: 1;
+	z-index: 99999;
+}
+.set_gallery-slider {
+    position: relative;
+    top: 100px;
+    height: 780px;
+}
+.inner_gallery{
+	position: relative;
+}
+.gallery_slider img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+.set_gallery-slider .slick-slide {
+    height: 780px!important;
+}
+.close-gallery {
+    position: absolute;
+    top: -39px;
+    right: -2%;
+    z-index: 999;
+    font-size: 19px;
+    color: black;
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    text-align: center;
+    background: #ff9400;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 37px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+    cursor: pointer;
+}
+.main-arrow.prev-arrow{
+	left: -25%;
+}
+.main-arrow.next-arrow{
+	right: -25%;
+}
+.inner-arrow {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ff9400;
+    color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+    cursor: pointer;
+}
+.gallery_slider .slide-arrow i{
+	font-weight: bold!important;
+}
+.inner-arrow.prev-arrow{
+	left: 15px;
+}
+.inner-arrow.next-arrow{
+	right: 15px;
+}
+.inner_gallery .slick-dots {
+    bottom: 10px;
+    margin: 0;
+}
+.inner_gallery .slick-dots li {
+    margin: 0!important;
+    height: 0!important;
+}
+.inner_gallery .slick-dots li button:before {
+    font-size: 9px !important;
+}
+.inner_gallery .slick-dots li.slick-active button:before {
+    opacity: 1!important;
+    color: #fff!important;
+}
+.image-box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-box{
+    position: relative;
+}
+.image-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0 0 0 / 40%);
+    transition: all 0.4s ease;
+}
+.image-box:hover:before{
+    height: 100%;
+}
+.plus_icon {
+    font-size: 28px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+.image-box:hover .plus_icon{
+    top: 50%;
+}
+.set_gallery-slider video {
+    width: 100%;
+    height: 780px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+  }
+
+  .image-gallery .image-box:nth-child(7n + 1) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+
+
+</style>
+</head>
+<body class="body">
+	<div class="co_header">
+		<div class="container">
+			<div class="row row1">
+				<div class="col-lg-6">
+				    <div class="row row1">
+				        <div class="col-lg-4">
+				        	<div class="logo">
+				        		<a href="home.html"><img src="image/logo.png"></a>
+				        	</div>
+				        </div>
+				        <div class="col-lg-8">
+				        	<ul class="menu">
+				        		<li><a href="home.html"><i class="fas fa-home"></i></a></li>
+				        		<li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+						        <li><a href="#"><i class="fas fa-tv"></i></a></li>
+					        </ul>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row row1">
+				        <div class="col-lg-8">
+				        	<div class="search-box">
+				            	<i class="far fa-search"></i>
+				            	<input type="text" placeholder="Search">
+				            </div>
+				        </div>
+				        <div class="col-lg-1">
+				        	<div class="notification" data-toggle="modal" data-target="#form1">
+				        		<i class="far fa-bell"></i>
+				        	</div>
+				        </div>
+				        <div class="col-lg-3">
+				        	<div class="user-profile">
+								<div class="dropdown">
+                                    <div type="button" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="image/user.jpg">
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="user-profile.html"><span><i class="far fa-user"></i> profile</span></a>
+                                        <a class="dropdown-item" href="#"><span><i class="fal fa-cog"></i>setting</span></a>
+                                        <a class="dropdown-item" href="#"><span><i class="far fa-bookmark"></i> saved</span></a>
+                                        <div class="dropdown-divider"><span><i class="far fa-sync-alt"></i> switch accounts</span></div>
+                                        <a class="dropdown-item" href="#"><span>log out</span></a>
+                                    </div>
+                                </div>
+						    </div>
+				        </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	</div>
+	<div class="main-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="co_middle-section">
+						<div class="image-gallery">
+                            <div class="image-box">
+                                <img src="image/gallery-1.webp">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-2.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <video controls>
+                                    <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+                                </video>
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-4.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-5.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-6.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-7.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-8.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-9.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-10.webp">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-11.png">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-13.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-14.webp">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-15.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-16.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-17.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-18.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-19.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-20.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-21.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-22.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-23.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-24.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-25.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-26.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-27.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-28.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-29.webp">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-30.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="image/gallery-31.jpg">
+                                <div class="plus_icon">
+                                    <i class="far fa-plus-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!----- Notification-modal ------->
+    <div class="modal fade modal-2" id="form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                	<div class="main-search">
+                        <div class="inner-search">
+	                        <div class="search-box1">
+		                        <div class="row row1">
+			                        <div class="col-lg-6">
+                                        <div class="noti">Notification</div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="noti-search">
+                                        	<i class="far fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-input"><input type="text" placeholder="search."><i class="fal fa-times"></i></div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>New</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-heart"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> liked your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>This week</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-heart"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> liked your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>This Month</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-heart"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> liked your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>Earlier</h2>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>suggestions for you</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<img src="image/status-4.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Brayden</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<img src="image/status-3.png">
+                        		<div class="new-user">
+                        			<p><a href="#">jacob@123</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------ gallery-slider ------------->
+    <div class="main-galler_slider">
+    	<div class="container">
+    		<div class="set_gallery-slider">
+    			<div class="close-gallery"><i class="fal fa-times"></i></div>
+     	        <div class="gallery_slider">
+                    <div>
+                    	<div class="inner_gallery">
+                            <div>
+                            	<img src="image/gallery-1.webp">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-2.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-3.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-4.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    	<div class="inner_gallery">
+                            <div>
+                            	<img src="image/gallery-6.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-7.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-8.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-9.jpg">
+                            </div>
+                            <div>
+                            	<img src="image/gallery-13.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    	<div class="inner_gallery">
+                            <div>
+                            	<video controls>
+                                    <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script type="text/javascript">
+    	$('.search-box1').click(function(){
+            $('.search-input').addClass('open');
+            $('.search-input').removeClass('removeicon');
+        });
+
+        $('.search-input i').click(function(){
+            $('.search-input').addClass('removeicon');
+        });
+
+        $('.inner-watch').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: false,
+            focusOnSelect: true
+        });
+
+        $('.gallery_slider').slick({
+        	autoplay: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            focusOnSelect: true,
+            prevArrow: '<div class="main-arrow slide-arrow prev-arrow"><i class="fal fa-chevron-left"></i></div>',
+            nextArrow: '<div class="main-arrow slide-arrow next-arrow"><i class="fal fa-chevron-right"></i></div>'
+        });
+
+        $('.inner_gallery').slick({
+        	autoplay: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: false,
+            focusOnSelect: true,
+            prevArrow: '<div class="inner-arrow slide-arrow prev-arrow"><i class="fal fa-chevron-left"></i></div>',
+            nextArrow: '<div class="inner-arrow slide-arrow next-arrow"><i class="fal fa-chevron-right"></i></div>'
+        });
+
+        $('.image-box .plus_icon').click(function(){
+            $('.main-galler_slider').addClass('opacity_1');
+        });
+
+        $('.close-gallery').click(function(){
+            $('.main-galler_slider').removeClass('opacity_1');
+        });
+
+
+
+    	
+    	
+
+  
+     
+    </script>
+
+</body>
+</html>

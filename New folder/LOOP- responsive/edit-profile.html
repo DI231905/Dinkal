@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOOP</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+	<link rel="icon" href="image/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body class="body">
+	<!-- <div class="co_header">
+		<div class="container">
+			<div class="row row1">
+				<div class="col-lg-6">
+				    <div class="row row1">
+				        <div class="col-lg-4">
+				        	<div class="logo">
+				        		<a href="home.html"><img src="image/logo.png"></a>
+				        	</div>
+				        </div>
+				        <div class="col-lg-8">
+				        	<ul class="menu">
+				        		<li><a href="home.html"><i class="fas fa-home"></i></a></li>
+				        		<li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+						        <li><a href="#"><i class="fas fa-tv"></i></a></li>
+					        </ul>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row row1">
+				        <div class="col-lg-8">
+				        	<div class="search-box">
+				            	<i class="far fa-search"></i>
+				            	<input type="text" placeholder="Search">
+				            </div>
+				        </div>
+				        <div class="col-lg-1">
+				        	<div class="notification" data-toggle="modal" data-target="#form1">
+				        		<i class="far fa-bell"></i>
+				        	</div>
+				        </div>
+				        <div class="col-lg-3">
+				        	<div class="user-profile">
+								<div class="dropdown">
+                                    <div type="button" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="image/user.jpg">
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="user-profile.html"><span><i class="far fa-user"></i> profile</span></a>
+                                        <a class="dropdown-item" href="#"><span><i class="fal fa-cog"></i>setting</span></a>
+                                        <a class="dropdown-item" href="#"><span><i class="far fa-bookmark"></i> saved</span></a>
+                                        <div class="dropdown-divider"><span><i class="far fa-sync-alt"></i> switch accounts</span></div>
+                                        <a class="dropdown-item" href="#"><span>log out</span></a>
+                                    </div>
+                                </div>
+						    </div>
+				        </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	</div> -->
+	<div class="main-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-12">
+					<div class="co_middle-section co_profile-edit">
+						<div class="row">
+		                    <div class="col-lg-4 col-md-4 col-12">
+	                            <ul class="nav nav-tabs nav1" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">Edit Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="change-pwd-tab" data-toggle="tab" href="#change-pwd" role="tab" aria-controls="change-pwd" aria-selected="false">Change Password</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-12">
+                	            <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
+                                    	<div class="profile-pic">
+                                    		<div class="pro_11">
+                                                <label class="-label" for="file">
+                                                    <i class="far fa-camera"></i>
+                                                    <!-- <span>Change Image</span> -->
+                                                </label>
+                                                <input id="file" type="file" onchange="loadFile(event)"/>
+                                                <img src="image/user.jpg" id="output" width="200" />
+                                            </div>
+                                            <p>Leslie@123</p>
+                                        </div>
+                                        <div class="user-input">
+                                        	<form>
+                                        		<div class="user_01">
+                                        			<label>Name</label>
+                                        			<input type="text" name="name">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>UserName</label>
+                                        			<input type="text" name="name">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>Website</label>
+                                        			<input type="text" name="name">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>Bio</label>
+                                        			<textarea type="text" name="bio" rows="5"></textarea>
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>email</label>
+                                        			<input type="email" name="email">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>phone number</label>
+                                        			<input type="number" name="number">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>gender</label>
+                                        			<input type="text" name="gender">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<button class="next">submit</button>
+                                        		</div>
+                                        	</form>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="change-pwd" role="tabpanel" aria-labelledby="change-pwd-tab">
+                                    	<div class="profile-pic">
+                                    		<div class="pro_11">
+                                                <img src="image/user.jpg" width="200" />
+                                            </div>
+                                            <p>Leslie@123</p>
+                                        </div>
+                                        <div class="user-input">
+                                        	<form>
+                                        		<div class="user_01">
+                                        			<label>Old Password</label>
+                                        			<input type="text" name="old-pwd">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>New Password</label>
+                                        			<input type="text" name="new-pwd">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<label>Confirm New Password</label>
+                                        			<input type="text" name="confirm-pwd">
+                                        		</div>
+                                        		<div class="user_01">
+                                        			<button class="next">submit</button>
+                                        		</div>
+                                        	</form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    	                </div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 co_right">
+					<div class="right-side-main">
+						<div class="right-section1">
+							<div class="sidebar-title">
+				            	<h4>Suggestions For You</h4>
+				            	<a href="see-all-suggestion.html">See All</a>
+				            </div>
+				            <div class="inner-follow">
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                	    <div class="user-image user-image_1">
+                                            <a href="#"><img src="image/status-1.png"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">jane</a></h2>
+                                		    <h5 class="ellipsis">Followed by jacob@123 + 11 more</h5>
+                                		</div>
+                                	    <div class="follow-btn1">
+                                	    	<button><a href="#">follow</a></button>
+                                	    </div>
+                                	</div>
+                                </div>
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                		<div class="user-image user-image_1">
+                                           	<a href="#"><img src="image/status-2.png"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">Esther</a></h2>
+                                		    <h5 class="ellipsis">Esther Simmons</h5>
+                                		</div>
+                                		<div class="follow-btn1">
+                                			<button><a href="#">follow</a></button>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                		<div class="user-image user-image_1">
+                                           	<a href="#"><img src="image/status-3.jpg"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">jacob@123</a></h2>
+                                		    <h5 class="ellipsis">jacob Simmons</h5>
+                                		</div>
+                                		<div class="follow-btn1">
+                                			<button><a href="#">follow</a></button>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                		<div class="user-image user-image_1">
+                                           	<a href="#"><img src="image/status-4.png"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">Brayden</a></h2>
+                                		    <h5 class="ellipsis">Brayden Simmons</h5>
+                                		</div>
+                                		<div class="follow-btn1">
+                                			<button><a href="#">follow</a></button>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                		<div class="user-image user-image_1">
+                                           	<a href="#"><img src="image/status-5.jpg"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">Coinneach</a></h2>
+                                		    <h5 class="ellipsis">Coinneach Simmons</h5>
+                                		</div>
+                                		<div class="follow-btn1">
+                                			<button><a href="#">follow</a></button>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                		<div class="user-image user-image_1">
+                                           	<a href="#"><img src="image/status-6.jpg"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">Devin</a></h2>
+                                		    <h5 class="ellipsis">Devin Simmons</h5>
+                                		</div>
+                                		<div class="follow-btn1">
+                                			<button><a href="#">follow</a></button>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="follow-1 sugg_follow">
+                                	<div class="row row1">
+                                		<div class="user-image user-image_1">
+                                           	<a href="#"><img src="image/status-7.jpg"></a>
+                                        </div>
+                                		<div class="follow-name">
+                                		    <h2><a href="#">Marco</a></h2>
+                                		    <h5 class="ellipsis">Marco Simmons</h5>
+                                		</div>
+                                		<div class="follow-btn1">
+                                			<button><a href="#">follow</a></button>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<!----- Notification-modal ------->
+    <div class="modal fade modal-2" id="form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                	<div class="main-search">
+                        <div class="inner-search">
+	                        <div class="search-box1">
+		                        <div class="row row1">
+			                        <div class="col-lg-6">
+                                        <div class="noti">Notification</div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="noti-search">
+                                        	<i class="far fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-input"><input type="text" placeholder="search."><i class="fal fa-times"></i></div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>New</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-heart"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> liked your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>This week</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-heart"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> liked your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>This Month</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-heart"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> liked your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>Earlier</h2>
+                        	<div class="inner-new">
+                        		<div class="noti-icon">
+                        			<i class="fal fa-comment-dots"></i>
+                        		</div>
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> commented on your post</p>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="co_new">
+                        	<h2>suggestions for you</h2>
+                        	<div class="inner-new">
+                        		<img src="image/status-2.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Esther</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<img src="image/status-4.png">
+                        		<div class="new-user">
+                        			<p><a href="#">Brayden</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        	<div class="inner-new">
+                        		<img src="image/status-3.png">
+                        		<div class="new-user">
+                        			<p><a href="#">jacob@123</a> requested to follow you</p>
+                        			<div class="inner-accept">
+                        			    <button>Accept</button>
+                        			    <button class="reject">reject</button>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    	$('.search-box1').click(function(){
+            $('.search-input').addClass('open');
+            $('.search-input').removeClass('removeicon');
+        });
+
+        $('.search-input i').click(function(){
+            $('.search-input').addClass('removeicon');
+        });
+
+        $(".apple-tabs").tabs({ 
+            show: { effect: "slide", direction: "left", duration: 200, easing: "easeOutBack" } ,
+            hide: { effect: "slide", direction: "right", duration: 200, easing: "easeInQuad" } 
+        });
+
+        var loadFile = function (event) {
+            var image = document.getElementById("output");
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+
+    	
+    	
+    </script>
+
+</body>
+</html>
