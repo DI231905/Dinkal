@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?iqx1ko');
+  src:  url('../fonts/icomoon.eot?iqx1ko#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?iqx1ko') format('truetype'),
+    url('../fonts/icomoon.woff?iqx1ko') format('woff'),
+    url('../fonts/icomoon.svg?iqx1ko#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-caret-arrow-up:before {
+  content: "\e900";
+}
+.icon-sort-down:before {
+  content: "\e901";
+}
+.icon-instagram .path1:before {
+  content: "\e902";
+  color: rgb(108, 39, 179);
+}
+.icon-instagram .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(80, 26, 150);
+}
+.icon-instagram .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path4:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path5:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(209, 209, 209);
+}
+.icon-instagram .path6:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(209, 209, 209);
+}
+.icon-instagram .path7:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(209, 209, 209);
+}
+.icon-open-magazine:before {
+  content: "\e909";
+}
+.icon-linkedin .path1:before {
+  content: "\e90a";
+  color: rgb(0, 122, 185);
+}
+.icon-linkedin .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(241, 242, 242);
+}
+.icon-twitter .path1:before {
+  content: "\e90c";
+  color: rgb(85, 172, 238);
+}
+.icon-twitter .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(241, 242, 242);
+}
+.icon-google-plus .path1:before {
+  content: "\e90e";
+  color: rgb(220, 78, 65);
+}
+.icon-google-plus .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(220, 78, 65);
+}
+.icon-google-plus .path3:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(220, 78, 65);
+}
+.icon-google-plus .path4:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-google-plus .path5:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-skype-1 .path1:before {
+  content: "\e913";
+  color: rgb(27, 146, 208);
+}
+.icon-skype-1 .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(26, 138, 186);
+}
+.icon-skype-1 .path3:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(27, 136, 173);
+}
+.icon-skype-1 .path4:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(29, 131, 159);
+}
+.icon-skype-1 .path5:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-skype .path1:before {
+  content: "\e918";
+  color: rgb(101, 162, 217);
+}
+.icon-skype .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(58, 124, 165);
+}
+.icon-skype .path3:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-skype .path4:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-skype .path5:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(209, 209, 209);
+}
+.icon-skype .path6:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-facebook .path1:before {
+  content: "\e91e";
+  color: rgb(59, 89, 152);
+}
+.icon-facebook .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-woman:before {
+  content: "\e920";
+}
+.icon-planting:before {
+  content: "\e921";
+}
+.icon-tax:before {
+  content: "\e922";
+}
+.icon-rings:before {
+  content: "\e923";
+}
+.icon-rocking-chair:before {
+  content: "\e924";
+}
+.icon-open-book:before {
+  content: "\e925";
+}
+.icon-user:before {
+  content: "\e926";
+}
+.icon-envelope:before {
+  content: "\e927";
+}
+.icon-phone-call:before {
+  content: "\e928";
+}
+.icon-phone-call-1:before {
+  content: "\e929";
+}
+.icon-login:before {
+  content: "\e92a";
+}
