@@ -1,0 +1,626 @@
+<html>
+<head>
+	<title>automobile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+</head>
+<body style="margin: 0; padding: 0; overflow-x: hidden;">
+    <section class="menu">
+     	<div class="container">
+     		<div class="row">
+     			<div class="col-lg-4">
+          <div class="logo">
+            <img src="image/logo.png">
+          </div>  
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+         			<div class="col-lg-7">
+         				<div class="menu_middel">
+         					<form>                       
+                      <div class="search_box">
+                          <input placeholder="Search product..." type="text">
+                          <button type="submit">Search</button> 
+                      </div>
+                  </form>
+         				</div>
+         			</div>
+         			<div class="col-lg-1">
+         				<div class="header_wishlist">
+                    <a href="wishlist.html">
+                    	<i class="far fa-heart"></i>
+                        <span class="wishlist_count">3</span>
+                    </a>
+                </div>
+         			</div>
+              <div class="col-lg-2 text">
+                <div class="mini_cart_wrapper">
+                      <a href="login.html">
+                          <i class="fas fa-user"></i>
+                          <span class="cart_price">Login<i class="ion-ios-arrow-down"></i></span>
+                      </a>
+                  </div>
+                </div>
+              <div class="col-lg-2 text">
+                <div class="mini_cart_wrapper">
+                      <a href="sign.html">
+                          <i class="fas fa-lock"></i>
+                          <span class="cart_price">Register<i class="ion-ios-arrow-down"></i></span>
+                      </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+     	</div>
+    </section>
+    <section class="header_buttom">
+      <div class="container">
+        <div class="row">
+          <div class=" col-lg-3">
+              <div class="categories_menu">
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i>ALL CATEGORIES</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">Automobile Accessories</a>
+                      <a href="#about">Auto Electrical & Lights</a>
+                      <a href="#contact">Brakes & Braking Systems</a>
+                      <a href="#contact">Off Road & Earth Moving Vehicles</a>
+                      <a href="#contact">Batteries & Charge Storage Devices</a>
+                      <a href="#contact">Tyre, Tube & Flaps</a>
+                      <a href="#contact">Automobile Body Coach Building</a>
+                      <a href="#contact">Commercial Vehicle Spare Parts</a>
+                      <a href="#contact">Engine & Engine Spare Parts</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-7">
+              <div class="menu1">
+                  <nav class="shift">
+                      <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="call_support text-right">
+                <p>
+                  <i class="icon-phone-call" aria-hidden="true"></i> 
+                  <span>Call us: <a href="tel:0123456789">0123456789</a></span>
+                </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="Advance-Slider">
+        <div class="item">
+          <div class="img-fill">
+            <img src="image/slider2.webp" alt="">
+            <div class="contain-wrapper">
+              <div class="dots-contain">
+                  <img class="dots-img" src="image/slider2.webp" alt="">
+              </div>
+              <div class="info">
+                <div>
+                  <h3>Accessories</h3> 
+                  <h5>all kinds of tractor trailer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-fill">
+            <img src="image/slider1.jpg" alt="">
+            <div class="contain-wrapper">
+              <div class="dots-contain">
+                <img class="image/slider1.jpg" alt="">
+              </div>
+              <div class="info">
+                <div>
+                  <h3>Big<strong><span>sale</span></strong>off</h3>
+                  <h5>Accessories Fidanza.</h5>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-fill">
+            <img src="image/slider3.jpg" alt="">
+            <div class="contain-wrapper">
+              <div class="dots-contain">
+                <img class="dots-img" src="image/slider3.jpg" alt="">
+              </div>
+              <div class="info">
+                <div>
+                  <h3>easily add image<br><span>We Make Customs Wheel</span></h3>
+                  <h5>Reliable & Professional</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>  
+    </section>
+    <section class="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="form_main">
+                 <div class="bespc">
+                    <h3>Tell us what you need, and we"ll help you get quotes</h3>
+                    <form class="bemnh">
+                      <div class="idsf">
+                        <label class="cl11">I want quotes for</label>
+                        <div>
+                          <input type="text" name="q_title" placeholder="Enter Product / Service name">
+                          <div class="beerrp4 bedsnone">
+                            <div data-role="content">Enter product/service name</div>
+                            <a class="be-erarw" data-role="arrow"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="idsf pfstrt">
+                          <label class="fs15 cl11">Briefly describe your requirement</label>
+                          <textarea id="Templates" placeholder="Additional details about your requirement..."></textarea>
+                      </div>
+                    </form>
+                    <div class="fo_bt">
+                        <button class="fo_btn"><a>Submit Requirement</a></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="more">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="connect">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h6>Connect with verified sellers</h6>
+                    <p>Tell us your requirement & let our experts find verified sellers for you</p>
+                    <a href="#">Get verified sellers</a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="connect">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h6>Download our App</h6>
+                    <p>Get instant notifications on the go. Download our App<br>Now</p>
+                    <a href="#">Download Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <h3>Automobile, Parts & Spares</h3>
+        <div class="pro_main">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="p_img">
+                 <img src="image/Automobile.jpg">
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile1.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Automobile Accessories</h4>
+                            <ul>
+                              <li>- Power Inverter</li>
+                              <li>- Car Seat Cover</li>
+                              <li>- Automotive Accessories</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile2.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Auto Electrical & Lights</h4>
+                            <ul>
+                              <li>- Spark Plug</li>
+                              <li>- Automotive Electrical Parts</li>
+                              <li>- Auto Electrical Products</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt-5">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile3.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Brakes & Braking Systems</h4>
+                            <ul>
+                              <li>- Brake Shoe</li>
+                              <li>- Brake Parts</li>
+                              <li>- Brake Cables</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt-5">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile4.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Off Road & Earth Moving Vehicles</h4>
+                            <ul>
+                              <li>- Truck Batteries</li>
+                              <li>- Truck Parts</li>
+                              <li>- TATA Truck</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pro_main pt-5">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="p_img">
+                 <img src="image/automobile-1.jpg">
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile5.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Batteries & Charge Storage Devices</h4>
+                            <ul>
+                              <li>- Mobile Battery</li>
+                              <li>- Batteries</li>
+                              <li>- Inverter Batteries</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile6.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Radiators & Accessories</h4>
+                            <ul>
+                              <li>- Radiators</li>
+                              <li>- Radiator Coolants</li>
+                              <li>- Automotive Radiators</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt-5">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile7.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Tyre, Tube & Flaps</h4>
+                            <ul>
+                              <li>- Tyres</li>
+                              <li>- Two Wheeler Tyres</li>
+                              <li>- Motorcycle Tyres</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt-5">
+                  <div class="pro_inner">
+                    <div class="row">
+                      <div class="col-lg-5 pa_1">
+                        <div class="pro_img hover01 column">
+                           <figure><img src="image/automobile8.jpg"></figure>
+                         </div>
+                      </div>
+                      <div class="col-lg-7 pa_2">
+                        <div class="pro_dis">
+                            <h4>Clutch Parts & Accessories</h4>
+                            <ul>
+                              <li>- Clutch</li>
+                              <li>- Clutch Plates</li>
+                              <li>- Clutch Components</li>
+                              <li class="lh14"><a href="#"> + View All</a></li>
+                            </ul>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+         <div class="main-footer">
+            <div class="footer1">
+            <div class="bg-footer"></div>
+            <div class="container">
+               <div class="footer-block">
+                  <div class="f-logo">
+                     <div class="logo_fo">
+                        <img src="image/logo.png">
+                     </div>
+                     <div>
+                        <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt ut labore dolore magna aliqua enim.</p>
+                     </div>
+                     <ul class="social-link1">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                     </ul>
+                     <div>
+                        
+                     </div>
+                  </div>
+                  <div class="f-service">
+                     <h2>Services</h2>
+                     <div>
+                        <ul>
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">How It Works</a></li>
+                           <li><a href="#">Our Blog</a></li>
+                           <li><a href="#">Our Services</a></li>
+                           <li><a href="#">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="f-gallary">
+                     <h2>Gallery</h2>
+                     <div class="g-pic">
+                        <div class="g-pic-block">
+                           <img src="image/automobile1.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="image/automobile2.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="image/automobile3.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="image/automobile4.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="image/automobile5.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="image/automobile1.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="f-contact">
+                     <h2>Contacts</h2>
+                     <div class="c-block">
+                        <div class="f-icon-c"><i class="fa fa-map-marker"></i></div>
+                        <div class="f-text-c"><p>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p></div>
+                     </div>
+                     <div class="c-block">
+                        <div class="f-icon-c"><i class="fa fa-microphone"></i></div>
+                        <div class="f-text-c"><a href="tel:+2(305) 587-3407">+2(305) 587-3407</a></div>
+                     </div>
+                     <div class="c-block">
+                        <div class="f-icon-c"><i class="fa fa-envelope"></i></div>
+                        <div class="f-text-c"><a href="mailto:info@example.com">info@example.com</a> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+             <div class="co_bottom">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8 col-12 bm-1">
+                <span>Sealosca Theme © Copyright 2021. All rights reserved</span>
+            </div>
+            <div class="col-md-4 col-12 bm-1">
+                <ul type="none">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+      </div>
+    </section>
+    <div class="copy">
+        <a class="up-btn show-1" href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var scrollTop = $(".up-btn");
+            $(window).scroll(function() {
+                var topPos = $(this).scrollTop();
+                if (topPos > 100) {
+                  $(scrollTop).css("opacity", "1");
+                } else {
+                  $(scrollTop).css("opacity", "0");
+                }
+            }); 
+            $(scrollTop).click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            }); 
+        });
+        function myFunction() {
+           document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        var $slider_ini = $(".Advance-Slider");
+        var total_slide = 0;
+        $slider_ini.on("init", function(event, slick ,  currentSlide, nextSlide){
+            $('button.slick-arrow').append('<div class="thumb"></div>');
+            total_slide = slick.slideCount;
+            console.log(total_slide);
+            next_img = $(slick.$slides[1]).find('img').attr('src'); 
+            prev_img = $(slick.$slides[total_slide - 1]).find('img').attr('src'); 
+            $('button.slick-next .thumb').append('<img src="'+next_img+'">');
+            $('button.slick-prev .thumb').append('<img src="'+prev_img+'">');
+            
+        });
+        $slider_ini.slick({
+            autoplay:true,
+            autoplaySpeed:4000,
+            speed:1000,
+            slidesToShow:1,
+            slidesToScroll:1,
+            dots:true,
+            pauseOnHover:false,
+            infinite:false,
+            customPaging: function(slider, i) {
+                var thumb = $(slider.$slides[i]).find('.dots-img').attr('src');
+                console.log(thumb);
+                return '<button><div class="mextrix"><a><img src="'+thumb+'"></a></div></button>';
+            }
+          });
+        $( "button.slick-arrow , .Advance-Slider ul.slick-dots li button" ).hover(function() {
+            $( this ).addClass( "hover-in" );
+            $( this ).removeClass( "hover-out" );
+          }, function() {
+            $( this ).removeClass( "hover-in" );
+            $( this ).addClass( "hover-out" );
+          }
+        );
+        $slider_ini.on('afterChange', function (event, slick, currentSlide) {
+            console.log('afterChange: '+ currentSlide);
+
+            prev_img = $(slick.$slides[currentSlide - 1]).find('img').attr('src'); 
+            next_img = $(slick.$slides[currentSlide + 1]).find('img').attr('src'); 
+
+            if (currentSlide == total_slide) {
+              prev_img = $(currentSlide - 1).find('img').attr('src');           
+            }
+
+            if (currentSlide == 0) {
+              console.log('if call');
+              prev_img = $(slick.$slides[total_slide - 1]).find('img').attr('src'); 
+            }
+
+            if (currentSlide == total_slide - 1) {
+              next_img = $(slick.$slides[0]).find('img').attr('src');         
+            }
+            
+            $('button.slick-arrow ').find('img').remove();
+
+            $('button.slick-next .thumb').append('<img src="'+next_img+'">');
+            $('button.slick-prev .thumb').append('<img src="'+prev_img+'">');
+            
+        });
+    </script>
+</body>
+</html>

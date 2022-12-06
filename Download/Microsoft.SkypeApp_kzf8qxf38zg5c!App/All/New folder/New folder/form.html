@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+     <title>Table</title>
+    <style>
+    #forminput {
+    margin-left: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:#f1efef;
+}
+   input[type="text"] {
+    margin-left: 60px;
+}
+textarea {
+    margin-left: 83px;
+    margin-top: 10px;
+}
+input[type="radio"] {
+    margin-left: 83px;
+    margin-top: 10px;
+}
+input[type="Email"] {
+    margin-left: 81px;
+    margin-top: 10px;
+}
+input[type="number"] {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+select {
+    margin-left: 102px;
+    margin-top: 10px;
+}
+input[type="checkbox"] {
+    margin-left: 86px;
+    margin-top: 10px;
+}
+button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color:;
+}
+
+        
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="forminput">
+      <div>
+          <label for=firstname>First name*<label>
+          <input id="firstname" type="text" name="fname" placeholder="Name" maxlength="10" autofocus="" required="">
+      </div>
+      <div>
+          <label for=Adress>Adress*</label>
+          <textarea id="Adress" placeholder="Message" name="Message" cols="50" rows="5"></textarea>
+      </div>
+      <div>
+          <label  for="email">Emil Id*</label>
+          <input id="Email" type="Email" name="email" placeholder="Email Id" required>
+      </div>
+      <div>
+          <label  for="Number">Mobile No*</label>
+          <input id="Number"type="number" name="Mobile No" placeholder="Mobile No">
+      </div>
+      <div>
+          <label for=Gender>Gender*<label>
+          <input id="Gender" type="radio" name="gender" value="Male" checked=""> Male
+          <input id="Gender1" type="radio" name="gender" value="FeMale"> FeMale
+          <input id="Gender2" type="radio" name="gender" value="Other"> Other
+      </div>
+      <div>
+          <label  for="City">City*</label>
+          <select id="City" name="favouritePlce" size="3" multiple>
+              <option>Select Favourite Place</option>
+              <option>Biimora</option>
+              <option>Navsari</option>
+              <option>surat</option>
+              <option>Baroda</option>
+              <option>Ahmedabad</option>
+          </select>
+     </div>
+     <div>
+        <label for="Hobies">Hobies*</label>
+        <input id="Hobies" type="checkbox" name="Singing" value="Singing" checked>Singing
+        <input id="Hobies" type="checkbox" name="Dancing" value="Dancing"> Dancing
+        <input id="Hobies" type="checkbox" name="Comady" value="Comady"> Comady
+        <input id="Hobies" type="checkbox" name="Travelling" value="Travelling"> Travelling
+    </div>
+    <input id="submitbtn" type="submit" name="submit" value="SUBMIT">
+    </form>
+  </div>
+    <script src="E:/sofia/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+      $("#submitbtn").click(function()
+      {
+        var sName = $("#firstname").val();
+        var sAdrss = $("#Adress").val();
+        var sEmail = $("#Email").val();
+        var sNumber = $("#Number").val();
+        var sGender = $("input[type='radio'][name='gender']:checked").val();
+        
+       
+
+        if(sName == ""){
+          alert("fil the name");
+          return false;
+        }
+        
+        if(sAdrss == ""){
+          alert("fil the adrss");
+          return false;
+        }
+
+        if(sEmail == ""){
+          alert("fil the email");
+          return false;
+        }
+
+         if(sNumber == ""){
+          alert("fil the number");
+          return false;
+        }
+         if(sGender == ""){
+          alert("fil the gender");
+          return false;
+        }
+
+      })
+
+    })
+    </script>
+  </boby>
+</html>

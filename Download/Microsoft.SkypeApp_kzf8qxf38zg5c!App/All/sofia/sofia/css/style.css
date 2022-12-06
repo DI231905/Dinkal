@@ -1,0 +1,183 @@
+a:link {
+    color: yellow;
+}
+a:visited {
+    color: green;
+}
+a:active {
+    color: red;
+}
+a:hover{
+   color: blue;
+   font-size: 20px;
+}
+.menu_div li:hover{
+   color: blue;
+
+}
+         *{
+         font-family: 'Nunito Sans', sans-serif;
+         font-family: 'Roboto', sans-serif;
+         font-family: 'Montserrat', sans-serif;   
+         } 
+         @font-face {
+         font-family: 'Century Gothic';
+         src: url('font/Century Gothic.woff2') format('woff2'),
+         url('font/Century Gothic.woff') format('woff'),
+         url('font/Century Gothic.ttf')  format('truetype');
+         }
+         body {
+         font-family: 'Century Gothic', sans-serif;
+         }
+         table
+         {
+         font-family: 'Roboto', sans-serif;
+         font-family: 'CenturyGothicRegular';
+         border: 1px solid #000;
+         margin-left: 50px;
+         border-collapse: collapse;
+         }
+         td{
+         border: 1px solid #000; 
+         padding: 10px;
+         }
+         th{
+         border: 1px solid #000; 
+         }
+         .image li{
+         text-align:left;
+         display:inline-block;
+         list-style-type: none;
+         letter-spacing: 2.4px;
+         font-size: 12px;
+         vertical-align: middle;
+         padding: 10px;
+         }
+         .image {
+         display:inline-block;
+         width: 39%;
+         vertical-align: middle;
+         }
+         ul{
+         padding: 0px;
+         margin: 0px;
+         }
+         .image1{
+         text-align: center;
+         display:inline-block;
+         width: 20%;
+         vertical-align: middle;
+         }
+         .image2{
+         text-align: right;
+         padding-left:0px;
+         }
+         .block{
+         display: inline-block;
+         text-align:left;
+         width: 50%;
+         height: 50%;
+         height: px;
+         width: 49%;
+         }
+         .block1{
+         display: inline-block;
+         text-align: center;
+         width: 100%;
+         height: 100%;
+         letter-spacing: 0.2em;
+         font-size:12px;
+         }  
+         .block2{
+         text-align:left;
+         line-height: 23.1px;
+         font-size: 14px;
+         width: 100%;
+         height: 100%;
+         }
+         .block3{
+         display:inline-block;
+         text-align:right;
+         line-height: 23.1px;
+         font-size: 14px;
+         width: 100%;
+         height: 100%;
+         vertical-align: middle;width:49%
+         }
+         .block4{
+         display:inline-block;
+         vertical-align: middle;
+         text-align: center;
+         width:49%;
+         text-align:center;
+         font-size: 16px;
+         width: 100%;
+         height: 100%;
+         letter-spacing: 4px;
+         }
+         .block5{
+         text-align:left;
+         display:inline-block;
+         width:49%;
+         vertical-align: middle;
+         font-size: 14px;
+         margin-left:20px;
+         }
+         .block6{
+         display: inline-block;
+         width: 49%;
+         vertical-align: middle;
+         text-align: left;
+         }
+         .block7{
+         display: inline-block;
+         width: 49.7%;
+         vertical-align: middle;
+         font-size: 14px;
+         text-align:center;
+         }
+         .block8{
+         display: inline-block;
+         width: 50%;
+         vertical-align: middle;
+         font-size: 14px;
+         text-align:center;
+         }
+         .title{
+         text-align: center;
+         font-size:12px;
+         letter-spacing: 2.4px;
+         margin-top: 50px;
+         }
+         .title1{
+         text-align: center;
+         font-size:20px;
+         letter-spacing:4px;
+         margin-bottom: 50px;
+         }
+         .container {
+         width: 90%;
+         margin: 0 auto;
+         margin-left: auto;
+         margin-right: auto;
+         }
+         .menu_div{
+         background: white;
+         }
+         .menu2{
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+         }
+         .tophead{
+            background-color: black;
+         }
+         .tophead:hover{
+            background-color: green;
+         }
+       /*  span.fa {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}*/

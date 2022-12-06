@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Pilgrim</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <style type="text/css">
+         .demo{
+         width: 300px;
+         height:300px
+         }
+         .sydney-block{
+         position: absolute;
+         top: 0;
+         right: 0;
+         z-index: 1;
+         }
+         .sydney-info {
+         width: 100%;
+         height: auto;
+         text-align: right;
+         }
+         .sydney-info p{
+         color: #cda21d;
+         font-size: 14px;
+         padding: 10px;
+         font-weight: 600;
+         }
+         .sydney-info h4{
+         color: white;
+         padding: 0 10px 10px;
+         font-size: 22px;
+         margin: 0;
+         }
+         .icon-block{
+         position: absolute;
+         bottom: 0;
+         left: 30%;
+         }
+         .sydney-icon i{
+         color: white;
+         text-align: center;
+         padding: 5px 5px 10px 10px; 
+         }
+         .back-info .sydney-icon {
+         position: absolute;
+         bottom: 8%;
+         left: 30%;
+         }
+         .back-info .sydney-icon i{
+         color: #132732;
+         font-size: 14px;
+         text-align: center;
+         padding: 5px 5px 10px 10px;
+         }
+         @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); 
+         @import url(https://fonts.googleapis.com/css?family=Lora);
+         [class*=' imghvr-'],
+         [class^=imghvr-] {
+         font-family: Montserrat, sans-serif;
+         position: relative;
+         display: inline-block;
+         margin: 0;
+         max-width: 100%;
+         background-color: rgba(230, 230, 230, .7);
+         color: #666;
+         overflow: hidden;
+         -moz-osx-font-smoothing: grayscale;
+         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
+         -webkit-transform: translateZ(0);
+         transform: translateZ(0);
+         }
+         [class*=' imghvr-'] img,
+         [class^=imghvr-] img {
+         vertical-align: top;
+         max-width: 100%;
+         position: relative;
+         z-index: 1
+         }
+         [class*=' imghvr-'] img::after,
+         [class^=imghvr-] img::after {
+         content: '';
+         background-color: rgba(0, 0, 0, 0.2);
+         display: block;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: -1
+         }
+         [class*=' imghvr-'] figcaption,
+         [class^=imghvr-] figcaption {
+         background-color: rgba(255, 255, 255, .9);
+         padding: 20px;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         border: 1px solid rgba(0, 0, 0, .1)
+         }
+         [class*=' imghvr-'] h3,
+         [class*=' imghvr-'] p,
+         [class^=imghvr-] h3,
+         [class^=imghvr-] p {
+         margin-top: 5px;
+         padding: 0
+         }
+         [class*=' imghvr-'] h3,
+         [class^=imghvr-] h3 {
+         margin-top: 55px;
+         font-weight: 700;
+         color: #333;
+         margin-bottom: 2px
+         }
+         [class*=' imghvr-'] p,
+         [class^=imghvr-] p {
+         font-family: Lora, sans-serif;
+         font-size: 16px
+         }
+         [class*=' imghvr-'] a,
+         [class^=imghvr-] a {
+         position: absolute;
+         top: 63%;
+         bottom: 22%;
+         left: 30%;
+         right: 31%;
+         z-index: 1;
+         text-decoration: none;
+         color: #132732;
+         background-color: #fec107;
+         padding: 13px 20px 13px 20px;
+         border-radius: 5px;
+         font-size: 14px;
+         font-weight: 500
+         }
+         [class*=' imghvr-'],
+         [class*=' imghvr-'] *,
+         [class*=' imghvr-'] :after,
+         [class*=' imghvr-'] :before,
+         [class*=' imghvr-']:after,
+         [class*=' imghvr-']:before,
+         [class^=imghvr-],
+         [class^=imghvr-] *,
+         [class^=imghvr-] :after,
+         [class^=imghvr-] :before,
+         [class^=imghvr-]:after,
+         [class^=imghvr-]:before {
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+         -webkit-transition: all .35s ease;
+         transition: all .35s ease
+         }
+         [class*=' imghvr-zoom-out'] figcaption,
+         [class^=imghvr-zoom-out] figcaption {
+         -webkit-transform: scale(.5);
+         transform: scale(.5);
+         -webkit-transform-origin: 50% 50%;
+         -ms-transform-origin: 50% 50%;
+         transform-origin: 50% 50%;
+         opacity: 0
+         }
+         [class*=' imghvr-zoom-out'].hover figcaption,
+         [class*=' imghvr-zoom-out']:hover figcaption,
+         [class^=imghvr-zoom-out].hover figcaption,
+         [class^=imghvr-zoom-out]:hover figcaption {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         opacity: 1;
+         -webkit-transition-delay: .3s;
+         transition-delay: .3s;
+         outline: 2px solid #cda21d;
+         outline-offset: -18px;
+         }
+         .imghvr-zoom-out:hover img {
+         -webkit-transform: scale(.5);
+         transform: scale(.5);
+         opacity: 0
+         }
+         .imghvr-zoom-out:hover .sydney-block {
+         display: none;
+         }
+         .imghvr-zoom-out:hover {}
+         [class*=' imghvr-'] p,
+         [class^=imghvr-] p {
+         font-family: Lora, sans-serif;
+         font-size: .9em;
+         padding: 10px 10px 0;
+         text-align: center
+         }
+         [class*=' imghvr-'] h3,
+         [class^=imghvr-] h3 {
+         font-family: Lora, sans-serif;
+         font-size: 22px;
+         text-align: center
+         }
+         [class*=' imghvr-'] a:hover {
+         outline: 2px solid white;
+         outline-offset: -10px;
+         border: none;
+         }
+         [class^=imghvr-] a:hover {
+         outline: 2px solid white;
+         outline-offset: -10px;
+         border: none;
+         }
+      </style>
+   </head>
+   <body>
+      <section class="main-header-bg">
+         <!-- <div class="header-service">
+            <div class="service-block">
+            
+            	<div class="service1">
+            		<div>
+            			<p>Your Trusted 24 Hours Service Provider!</p>
+            		</div>
+            	</div>
+            	<div class="service2">
+            			<ul>
+            				<li><a href="#">Support</a></li>
+            				<li><a href="#">Careers</a></li>
+            				<li><a href="#">FAQ’s</a></li>
+            			</ul>
+            		
+            			<ul>
+            				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            				<li><a href="#"><i class='fa fa-flickr'></i></a></li>
+            				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            			</ul>
+            	</div>
+            </div>
+            </div> -->
+         <header>
+            <div>
+            <div class="main-header1">
+               <div class="menu-block">
+                  <div class="menu1">
+                     <div class="img-block">
+                        <img src="Images/logo.png">
+                     </div>
+                  </div>
+                  <div class="menu2">
+                     <div class="contact-menu">
+                        <div class="contact-block">
+                           <div>
+                              <img src="Images/location.png">
+                           </div>
+                           <div>
+                              <h4>Address</h4>
+                              <p>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
+                           </div>
+                        </div>
+                        <div class="contact-block">
+                           <div>
+                              <img src="Images/call.png">
+                           </div>
+                           <div>
+                              <h4>Call Us On</h4>
+                              <p>+2(305) 587-3407</p>
+                           </div>
+                        </div>
+                        <div class="contact-block">
+                           <div>
+                              <img src="Images/email.png">
+                           </div>
+                           <div>
+                              <h4>Mail Us On</h4>
+                              <p>info@example.com</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="main-hedaer2">
+               <div class="main-head-block">
+                  <div class="menu-block1">
+                     <div>
+                        <ul>
+                           <li><a href="#">Home Page</a></li>
+                           <li><a href="#">Hotels</a></li>
+                           <li><a href="#">Our Tour</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="menu-block2">
+                     <div>
+                        <ul>
+                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class='fa fa-flickr'></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#">Search Word... <i class="fa fa-search"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <section>
+            <div class="container">
+               <div class="main-slider-info">
+                  <div class="l"></div>
+                  <div class="l">
+                     <h1>Unforgettable Trips</h1>
+                     <p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </section>
+      <section>
+         <div class="travel-bg">
+            <div class="container">
+               <div class="main-travel-spe">
+                  <div class="travel-title">
+                     <h4>PILGRIM SPECIALS</h4>
+                     <h1>Why Travel with Tutive?</h1>
+                     <div class="title-line"><img src="Images/conversation1.png"></div>
+                  </div>
+                  <div class="main-travel-block">
+                     <div class="travel1">
+                        <div class="overflow-shine">
+                           <div class="test-shine">
+                              <img src="Image/best-app.png">
+                           </div>
+                        </div>
+                        <div class="icon-img">
+                           <img src="Images/user.png">
+                        </div>
+                        <p>2000+ Our Worldwide Guide</p>
+                     </div>
+                     <div class="travel1">
+                        <div class="overflow-shine">
+                           <div class="test-shine">
+                              <img src="Images/feature-2.jpg">
+                           </div>
+                        </div>
+                        <div class="icon-img">
+                           <img src="Images/two-businessmen.png">
+                        </div>
+                        <p>100% Trusted Tour Agency</p>
+                     </div>
+                     <div class="travel1">
+                        <div class="overflow-shine">
+                           <div class="test-shine">
+                              <img src="Images/feature-3.jpg">
+                           </div>
+                        </div>
+                        <div class="icon-img">
+                           <img src="Images/reset.png">
+                        </div>
+                        <p>12+ Years of Travel Experience</p>
+                     </div>
+                     <div class="travel1">
+                        <div class="overflow-shine">
+                           <div class="test-shine">
+                              <img src="Images/feature-4.jpg">
+                           </div>
+                        </div>
+                        <div class="icon-img">
+                           <img src="Images/rating.png">
+                        </div>
+                        <p>98% of Our Travelers are Happy</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="main-about-us">
+            <img src="Images/ship-1-1.png" class="ship">
+            <div class="about-detail">
+               <h1>WHAT PEOPLE SAY ABOUT US</h1>
+               <div class="title-line"><img src="Images/Forma-1-6.png"></div>
+               <p>TO THESE IN THE MORNING I SENT THE CAPTAIN, WHO WAS TO ENTER INTO A PARLEY WITH THEM</p>
+               <div class="madeline">
+                  <div class="madeline-inner">
+                     <div class="m-block1">
+                        <img src="Images/person.jpg">
+                     </div>
+                     <div class="m-block2">
+                        <h3>Madeline goodman</h3>
+                        <p>With what mingled joy and sorrow do I take up the pen to write to my dearest friend! Oh, what I change between to-day and yesterday! Now I am friendless and alone; yesterday I was at home, in the sweet company of a sister, whom I shell ever, ever cherish!</p>
+                     </div>
+                  </div>
+                  <div class="madeline-inner">
+                     <div class="m-block1">
+                        <img src="Images/person.jpg">
+                     </div>
+                     <div class="m-block2">
+                        <h3>Madeline goodman</h3>
+                        <p>With what mingled joy and sorrow do I take up the pen to write to my dearest friend! Oh, what I change between to-day and yesterday! Now I am friendless and alone; yesterday I was at home, in the sweet company of a sister, whom I shell ever, ever cherish!</p>
+                     </div>
+                  </div>
+                  <div class="madeline-inner">
+                     <div class="m-block1">
+                        <img src="Images/person.jpg">
+                     </div>
+                     <div class="m-block2">
+                        <h3>Madeline goodman</h3>
+                        <p>With what mingled joy and sorrow do I take up the pen to write to my dearest friend! Oh, what I change between to-day and yesterday! Now I am friendless and alone; yesterday I was at home, in the sweet company of a sister, whom I shell ever, ever cherish!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="desti-bg">
+            <div class="container">
+               <div class="main-destination">
+                  <div class="destination-title">
+                     <h2>Popular Destination</h2>
+                     <div class="title-line"><img src="Images/earth.png"></div>
+                     <p>This is Amazing Travel Agency !</p>
+                  </div>
+                  <div class="desti-main-block">
+                     <div class="destination">
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out ">
+                              <img src="Images/header-1920x1135-10-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Sydney Opera House</p>
+                                    <h4>Sydney</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>Sydney</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <img src="Images/header-1920x1135-9-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Fernando De Noronha</p>
+                                    <h4>Brazil</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>Brazil</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <img src="Images/header-1920x1135-6-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Aya Sofya</p>
+                                    <h4>Instanbul</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>Instanbul</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <img src="Images/9-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Taj Mahal</p>
+                                    <h4>India</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>India</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <img src="Images/header-1920x1135-2-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Hop on Hop off Bus Tour</p>
+                                    <h4>London</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>London</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <img src="Images/accommodation-960x650-4-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Sydney Opera House</p>
+                                    <h4>Italy</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>Italy</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable conten.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <div class="overlay">
+                                 <img src="Images/blog-800x250-4-370x370.jpg" alt="37">
+                                 <div class="sydney-block">
+                                    <div class="sydney-info">
+                                       <p>Canals of Venice</p>
+                                       <h4>Paris</h4>
+                                    </div>
+                                 </div>
+                                 <div class="icon-block">
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>Paris</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                        <div class="d-block">
+                           <figure class="imghvr-zoom-out">
+                              <img src="Images/gallery-1920x1280-1-370x370.jpg" alt="37">
+                              <div class="sydney-block">
+                                 <div class="sydney-info">
+                                    <p>Sydney Opera House</p>
+                                    <h4>Turkey</h4>
+                                 </div>
+                              </div>
+                              <div class="icon-block">
+                                 <div class="sydney-icon">
+                                    <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                 </div>
+                              </div>
+                              <figcaption>
+                                 <div class="back-info">
+                                    <h3>Turkey</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <a href="#">Read More</a>
+                                    <div class="sydney-icon">
+                                       <i class="fa fa-globe"></i><i class="fa fa-road"></i><i class="fa fa-plane"></i><i class='fa fa-university'></i>
+                                    </div>
+                                 </div>
+                              </figcaption>
+                           </figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="main-counter">
+            <div class="container">
+               <div class="main-block-counter">
+                  <div class="counter-block">
+                     <div>
+                        <img class="rotate-img" src="Images/earth-pictures.png">
+                     </div>
+                     <h3 class="total1">2545</h3>
+                     <p>Outstanding Tours</p>
+                  </div>
+                  <div class="counter-block">
+                     <div>
+                        <img class="rotate-img" src="Images/car.png">
+                     </div>
+                     <h3 class="total2">5575</h3>
+                     <p>Sold a Car</p>
+                  </div>
+                  <div class="counter-block">
+                     <div>
+                        <img class="rotate-img" src="Images/ship.png">
+                     </div>
+                     <h3 class="total3">2945</h3>
+                     <p>World Wide Cruise</p>
+                  </div>
+                  <div class="counter-block">
+                     <div>
+                        <img class="rotate-img" src="Images/family.png">
+                     </div>
+                     <h3 class="total4">1008</h3>
+                     <p>Happy Family's</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="bg-hotel">
+            <div class="container">
+               <div class="main-hotel">
+                  <div class="main-title">
+                     <div class="content-title">
+                        <h1>Hotels</h1>
+                        <div class="title-line"><img src="Images/Forma-1-2.png"></div>
+                        <h4>Looking cautiously round, to ascertain that they <br>were not overhead</h4>
+                     </div>
+                  </div>
+                  <div class="main-content">
+                     <div class="hotel-main-block">
+                        <div class="hotel-block">
+                           <div class="h-block">
+                              <div class="h-img">
+                                 <div>
+                                    <img src="Images/hotel-750x420-2-250x240.jpg">
+                                 </div>
+                              </div>
+                              <div class="h-info">
+                                 <div>
+                                    <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                 </div>
+                                 <h4>MARIOTT HOTEL COPY</h4>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+                                 <div>
+                                    <i class="fa fa-area-chart"></i><i class="fa fa-credit-card-alt"></i><i class='fa fa-university'></i><i class='fa fa-bed'></i>	
+                                 </div>
+                              </div>
+                              <div class="h-price">
+                                 <p>From</p>
+                                 <h3>$845</h3>
+                                 <p>Person</p>
+                                 <div><a href="#">Details</a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotel-block">
+                           <div class="h-block">
+                              <div class="h-img">
+                                 <div>
+                                    <img src="Images/hotel-750x420-3-250x240.jpg">
+                                 </div>
+                              </div>
+                              <div class="h-info">
+                                 <div>
+                                    <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                 </div>
+                                 <h4>BAAPER HOTEL</h4>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+                                 <div>
+                                    <i class="fa fa-area-chart"></i><i class="fa fa-credit-card-alt"></i><i class='fa fa-university'></i><i class='fa fa-bed'></i>	
+                                 </div>
+                              </div>
+                              <div class="h-price">
+                                 <p>From</p>
+                                 <h3>$998</h3>
+                                 <p>Person</p>
+                                 <div><a href="#">Details</a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotel-block">
+                           <div class="h-block">
+                              <div class="h-img">
+                                 <div>
+                                    <img src="Images/hotel-750x420-1-250x240.jpg">
+                                 </div>
+                              </div>
+                              <div class="h-info">
+                                 <div>
+                                    <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                 </div>
+                                 <h4>MARIOTT HOTEL COPY</h4>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+                                 <div>
+                                    <i class="fa fa-area-chart"></i><i class="fa fa-credit-card-alt"></i><i class='fa fa-university'></i><i class='fa fa-bed'></i>	
+                                 </div>
+                              </div>
+                              <div class="h-price">
+                                 <p>From</p>
+                                 <h3>$845</h3>
+                                 <p>Person</p>
+                                 <div><a href="#">Details</a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotel-block">
+                           <div class="h-block">
+                              <div class="h-img">
+                                 <div>
+                                    <img src="Images/6-250x240.jpg">
+                                 </div>
+                              </div>
+                              <div class="h-info">
+                                 <div>
+                                    <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                 </div>
+                                 <h4>MARIOTT HOTEL COPY</h4>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+                                 <div>
+                                    <i class="fa fa-area-chart"></i><i class="fa fa-credit-card-alt"></i><i class='fa fa-university'></i><i class='fa fa-bed'></i>	
+                                 </div>
+                              </div>
+                              <div class="h-price">
+                                 <p>From</p>
+                                 <h3>$845</h3>
+                                 <p>Person</p>
+                                 <div><a href="#">Details</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="main-gallary">
+            <div class="container">
+               <div class="mail-block-gallary">
+                  <div class="gallary-title">
+                     <h1>PHOTO GALLERY</h1>
+                     <div class="title-line"><img src="Images/camera.png"></div>
+                     <p>TO THESE IN THE MORNING I SENT THE CAPTAIN, WHO WAS TO ENTER INTO<br> A PARLEY WITH THEM</p>
+                  </div>
+                  <div class="pic-block">
+                     <div class="p-block">
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/O6O9JG0.jpg">
+                              <div class="overlay">
+                                 <p class="text">WITH WHAT MINGLED JOY AND SORROW</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/Layer-45.jpg">
+                               <div class="overlay">
+                                <!--  <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>    
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/Layer46.jpg">
+                               <div class="overlay">
+                                 <!-- <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/Layer-47.jpg">
+                               <div class="overlay">
+                                 <!-- <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/love-1111816_1920.png">
+                               <div class="overlay">
+                                 <!-- <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/O6O9JG0.jpg">
+                               <div class="overlay">
+                                <!--  <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/26241671536_6798f2d047_o.jpg">
+                               <div class="overlay">
+                                 <!-- <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-b">
+                           <div class="p-b-img">
+                              <img src="Images/O6G3CK0.jpg">
+                               <div class="overlay">
+                                 <!-- <p class="text">WITH WHAT MINGLED JOY AND SORROW</p> -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="container">
+            <div class="main-blog">
+               <div class="blog-title">
+                  <div class="title-b">
+                     <p>NEWS & ARTICLES</p>
+                     <div class="t-blog">
+                        <div class="t-blog-title">
+                           <h1>Stay Update with Travio Tips</h1>
+                           <div class="title-line">
+                              <img src="Images/blog.png">
+                           </div>
+                        </div>
+                        <div class="t-blog-title-btn">
+                           <div>
+                              <a class="overlay-btn" href="#">All Blog Post</a>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main-blog-content">
+                  <div class="blog-content-block">
+                     <div class="blog-block">
+                        <div class="inner-blog">
+                           <div class="blog-img">
+                              <img src="Images/news-9-370x270.jpg">
+                              <div class="overlay"></div>
+                              <span class="post-date">
+                                 <i class="fa fa-calendar"></i>
+                                 <span class="date">January 25, 2021</span>
+                              </span>
+                           </div>
+                           <div class="logo-asset-text">
+                              <a href="#">Logo & Assets</a>
+                              <a href="#">Travel Direction</a>
+
+                           </div>
+                           <div class="b-content-title">
+                              <h3>Including animation in your design system</h3>
+                           </div>
+                           <div class="description-blog">
+                              <h4>By <span>Admin</span> - January 25, 2021</h4>
+                              <p>Lorem ipsum dolor sit amet consectur adip icing sed eiusmod .</p>
+                           </div>
+                           <div class="btn-blog">
+                             <a class="overlay-see" href="#">See Details</a>
+                           </div>
+                        </div>
+                     </div>
+                    <div class="blog-block">
+                        <div class="inner-blog">
+                           <div class="blog-img">
+                              <img src="Images/news-10-370x270.jpg">
+                              <div class="overlay"></div>
+                              <span class="post-date">
+                                 <i class="fa fa-calendar"></i>
+                                 <span class="date">January 27, 2021</span>
+                              </span>
+                           </div>
+                           <div class="logo-asset-text">
+                              <a href="#">Lifestyle</a>
+                           </div>
+                           <div class="b-content-title">
+                              <h3>Including animation in your design system</h3>
+                           </div>
+                           <div class="description-blog">
+                              <h4>By <span>Admin</span> - January 27, 2021</h4>
+                              <p>Lorem ipsum dolor sit amet consectur adip icing sed eiusmod .</p>
+                           </div>
+                           <div class="btn-blog">
+                             <a class="overlay-see" href="#">See Details</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="blog-block">
+                        <div class="inner-blog">
+                           <div class="blog-img">
+                              <img src="Images/news-12-370x270.jpg">
+                              <div class="overlay"></div>
+                              <span class="post-date">
+                                 <i class="fa fa-calendar"></i>
+                                 <span class="date">January 27, 2021</span>
+                              </span>
+                           </div>
+                           <div class="logo-asset-text">
+                              <a href="#">Lifestyle</a>
+                           </div>
+                           <div class="b-content-title">
+                              <h3>Including animation in your design system</h3>
+                           </div>
+                           <div class="description-blog">
+                              <h4>By <span>Admin</span> - January 27, 2021</h4>
+                              <p>Lorem ipsum dolor sit amet consectur adip icing sed eiusmod .</p>
+                           </div>
+                           <div class="btn-blog">
+                             <a class="overlay-see" href="#">See Details</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="blog-block">
+                        <div class="inner-blog">
+                           <div class="blog-img">
+                              <img src="Images/news-12-370x270.jpg">
+                              <div class="overlay"></div>
+                              <span class="post-date">
+                                 <i class="fa fa-calendar"></i>
+                                 <span class="date">January 27, 2021</span>
+                              </span>
+                           </div>
+                           <div class="logo-asset-text">
+                              <a href="#">Lifestyle</a>
+                           </div>
+                           <div class="b-content-title">
+                              <h3>Including animation in your design system</h3>
+                           </div>
+                           <div class="description-blog">
+                              <h4>By <span>Admin</span> - January 27, 2021</h4>
+                              <p>Lorem ipsum dolor sit amet consectur adip icing sed eiusmod .</p>
+                           </div>
+                           <div class="btn-blog">
+                             <a class="overlay-see" href="#">See Details</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <footer>
+         <div class="main-footer">
+            <div class="footer1">
+            <div class="bg-footer"></div>
+            <div class="container">
+               <div class="footer-block">
+                  <div class="f-logo">
+                     <div>
+                        <img src="Images/logo.png">
+                     </div>
+                     <div>
+                        <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt ut labore dolore magna aliqua enim.</p>
+                     </div>
+                     <div>
+                        <i class="fa fa-facebook-f"><i class="fa fa-twitter"><i class="fa fa-instagram"></i></i></i><i class="fa fa-google-plus"></i><i class="fa fa-linkedin"></i>
+                     </div>
+                     <div>
+                        
+                     </div>
+                  </div>
+                  <div class="f-service">
+                     <h2>Services</h2>
+                     <div>
+                        <ul>
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">How It Works</a></li>
+                           <li><a href="#">Our Tour</a></li>
+                           <li><a href="#">Our Blog</a></li>
+                           <li><a href="#">Our Services</a></li>
+                           <li><a href="#">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="f-gallary">
+                     <h2>Gallery</h2>
+                     <div class="g-pic">
+                        <div class="g-pic-block">
+                           <img src="Images/footer-gallery-1.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="Images/footer-gallery-2.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="Images/footer-gallery-4.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="Images/footer-gallery-6.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="Images/footer-gallery-5.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                        <div class="g-pic-block">
+                           <img src="Images/footer-gallery-3.jpg">
+                           <div class="overlay"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="f-contact">
+                     <h2>Contacts</h2>
+                     <div class="c-block">
+                        <div class="f-icon-c"><i class="fa fa-map-marker"></i></div>
+                        <div class="f-text-c"><p>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p></div>
+                     </div>
+                     <div class="c-block">
+                        <div class="f-icon-c"><i class="fa fa-microphone"></i></i></div>
+                        <div class="f-text-c"><a href="tel:+2(305) 587-3407">+2(305) 587-3407</a></div>
+                     </div>
+                     <div class="c-block">
+                        <div class="f-icon-c"><i class="fa fa-envelope"></i></div>
+                        <div class="f-text-c"><a href="mailto:info@example.com">info@example.com</a> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </footer>
+
+      <script type="text/javascript">
+         $({counter: 0}).animate({counter: 2545}, {
+  //Animate over a period of 2seconds
+            duration: 3000,
+  //Progress animation at constant pace using linear
+            easing:'linear',
+            step: function() {    
+    //Every step of the animation, update the number value
+    //Use ceil to round up to the nearest whole int
+            $('.total1').text(Math.ceil(this.counter))
+            },
+                complete: function() {
+    //Could add in some extra animations, like a bounc of colour change once the count up is complete.
+            }
+         });
+
+         $({counter: 0}).animate({counter: 5575}, {
+            duration: 3000,
+            easing:'linear',
+            step: function() {    
+            $('.total2').text(Math.ceil(this.counter))
+            },
+                complete: function() {
+            }
+         });
+         $({counter: 0}).animate({counter: 2945}, {
+            duration: 3000,
+            easing:'linear',
+            step: function() {    
+            $('.total3').text(Math.ceil(this.counter))
+            },
+                complete: function() {
+            }
+         });
+         $({counter: 0}).animate({counter: 1008}, {
+            duration: 3000,
+            easing:'linear',
+            step: function() {    
+            $('.total4').text(Math.ceil(this.counter))
+            },
+                complete: function() {
+            }
+         });
+
+
+          $('.madeline').slick({
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           arrows: false,
+         
+           autoplay: true,
+            focusOnSelect: true,
+           autoplaySpeed: 2000
+         });
+
+         $('.blog-content-block').slick({
+           slidesToShow: 3,
+           slidesToScroll: 1,
+           arrows: false,
+         
+           autoplay: true,
+            focusOnSelect: true,
+           autoplaySpeed: 10000
+         });
+
+      </script>
+
+   </body>
+</html>

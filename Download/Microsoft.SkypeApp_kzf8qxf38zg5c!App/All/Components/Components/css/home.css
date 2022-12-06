@@ -1,0 +1,389 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    width: 800px;
+    margin: auto;
+}
+.right-head{
+    padding-right: 0 !important;
+}
+.certi {
+    width: 100%;
+    height: 0;
+    border-bottom: 100px solid #ef7f1a;
+    border-left: 75px solid transparent;
+    margin-left: auto;
+}
+.certi img {
+    padding-left: 18px;
+    padding-top: 10px;
+}
+.heder_main .row {
+    align-items: center;
+    justify-content: space-between;
+}
+.banner_main{
+	position: relative;
+}
+.banner_main img{
+	width:100%;
+}
+.banner_dis{
+	position: absolute;
+	top:88px;
+	left: 10%;	
+}
+.banner_dis h2{
+	font-size:54px;
+	font-weight: 900;
+	color:#ef7f1a;
+}
+.banner_dis p{
+	font-size: 30px;
+	font-weight: 500;
+	color: white;
+    line-height: 35px;
+}
+.left_img{
+    padding-left: 0 !important;
+}
+.dolor{
+	padding: 40px 50px 40px 50px;
+}
+.dolor_head h3{
+	text-align: center;
+	margin: 0 auto;
+	color: #2457a1;
+	font-size: 32px;
+	font-weight: 700;
+}
+.dolor_dis{
+	padding-top:70px;
+}
+.dolor_dis .row{
+    margin: 0 !important;
+}
+.do_first{
+	text-align: center;
+}
+.do_first p{
+	padding-top: 30px;
+	font-size: 22px;
+	font-weight: 900;
+    margin-bottom: 0;
+}
+.dolor {
+    border-top:5px solid #bdb9b9;
+}
+section.banner {
+    padding-bottom: 20px;
+}
+.moll{
+	padding:80px 0 ;
+	background-color: #f5f5f5;
+}
+.moll_img img {
+   width:100%;
+   height: 76%;
+   object-fit: cover;
+}
+.moll_dis h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2457a1;
+}
+.moll_dis p,.moll_dis span {
+    font-size: 18px;
+    color: #434242;
+    padding-top: 0;
+}
+.gallery{
+	padding: 60px 0 30px;
+}
+.ga_head{
+	text-align: center;
+	padding-bottom:10px;
+}
+.ga_head h3 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #2457a1;
+}
+.ga_head p{
+	 font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+.ga_img img {
+    width: 100%;
+}
+.ga_dis{
+	position: relative;
+	background-color: #224a98;
+	height: 100%;
+}
+.ga_dis p {
+    text-align: center;
+    font-size: 28px;
+    width: 76%;
+    font-weight: 500;
+    color: #ef7f1a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 30px;
+    transform: translate(-50%, -50%);
+}
+.ga_first .row {
+   margin: 0 !important;
+}
+.ga_first .col-lg-4 {
+    padding: 0;
+}
+.ga_con{
+	background-color:#ef7f1a;
+	text-align: center;
+	margin: 0 auto;
+}
+.ga_con p {
+    padding: 50px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-weight: 500;
+}
+.footer{
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer ul li {
+    padding: 0 10px;
+}
+.footer p {
+    padding-top: 20px;
+    font-size: 18px;
+}
+.footer ul li img {
+    padding-right: 10px;
+}
+.footer ul li span {
+    font-size:20px;
+    color: black;
+}
+.bl_color{
+	border: 6px solid #0a2252;
+}
+.moll .row{
+    margin:0 !important;
+  }
+  .footer ul li a {
+    display: flex;
+    align-items: center;
+}
+/*------------------------------RESPONSIVE....................*/
+@media only screen and (min-width: 1024px) and (max-width: 1260px){
+ .certi {
+    width: 70%;
+  }
+  .moll_dis {
+    padding-right: 5px;
+  }
+  .moll .row{
+    margin:0 !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .certi {
+    width: 124%;
+  }
+  .certi img {
+    padding-top: 10px;
+  }
+  .banner_dis h2 {
+    font-size: 50px;
+  }
+  .banner_dis p {
+    font-size: 28px;
+  }
+  .dolor_head h3 {
+    font-size: 30px;
+  }
+  .moll_dis {
+    padding-right: 5px;
+  }
+  .moll .row{
+    margin:0 !important;
+  }
+  .moll_dis h3 {
+    font-size: 27px;
+  }
+  .moll_dis p, .moll_dis span {
+    font-size: 14px;
+  }
+  .gallery {
+    padding: 60px 0;
+  }
+  .ga_head p {
+    font-size: 25px;
+  }
+  .ga_dis p {
+    font-size: 29px;
+    line-height: 35px;
+  }
+  .ga_con p {
+    padding: 40px;
+    font-size: 20px;
+  }
+  .footer ul li span {
+    font-size: 16px;
+  }
+  .dolor {
+    padding: 30px 0;
+  }
+  .footer ul li a {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 767px){
+    .moll_img img {
+    height: 100%;
+    }
+   .left_img {
+    padding: 0 !important;
+    }
+   .moll_dis {
+    padding-top: 25px;
+    }
+   .do_first {
+    margin-bottom: 30px;
+   }
+   .banner_dis {
+    position: absolute;
+    top: 40px;
+   }
+  .dolor_dis {
+    padding-top: 45px;
+  }
+    .body {
+    width: 100%;
+    margin: auto;
+  }
+  .certi img {
+    padding-left: 5px;
+    padding-top: 17px;
+    width: 44px;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .banner_dis h2 {
+    font-size: 25px;
+  }
+  .banner_dis p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .dolor_head h3 {
+    font-size:17px;
+  }
+  .dolor {
+    padding: 30px 0;
+  }
+  .moll_dis h3 {
+    font-size: 26px;
+  }
+  .moll {
+    padding: 60px 0 25px 0;
+  }
+  .moll_dis p, .moll_dis span {
+    font-size: 16px;
+  }
+  .ga_dis p {
+    position: relative;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .ga_dis {
+    height: 300px;
+  }
+ .ga_img img {
+    height: 100%;
+  }
+ .ga_head h3 {
+    font-size: 23px;
+ }
+ .ga_head p {
+    font-size: 17px;
+ }
+ .gallery {
+    padding: 60px 0;
+ }
+.ga_con p {
+    padding: 35px 0px;
+    font-size: 13px;
+    width: 82%;
+}
+.footer ul {
+    display: block;
+    padding: 0;
+}
+.footer ul li{
+    padding:5px 0;
+}
+.number{
+    padding-right:60px;
+}
+.do_first p {
+    font-size:17px;
+}
+.footer ul li a {
+    justify-content: center;
+}
+}
+@media only screen and (max-width: 320px){
+ .certi {
+    width:100%;
+ }
+ .banner_dis {
+    top: 43%;
+    left: 7%;
+}
+.certi img {
+    padding-left:0px;
+    padding-top:17px;
+    width:34px;
+  }
+.banner_dis h2 {
+    font-size: 23px;
+}
+.banner_dis p {
+    font-size: 12px;
+    line-height: 19px;
+}
+.dolor_dis {
+    padding-top: 40px;
+}
+ .dolor_head h3 {
+    font-size:14px;
+  }
+.moll {
+    padding: 60px 0 25px 0;
+}
+.moll_dis h3 {
+    font-size: 22px;
+}
+.ga_head h3 {
+    font-size: 23px;
+}
+}
+

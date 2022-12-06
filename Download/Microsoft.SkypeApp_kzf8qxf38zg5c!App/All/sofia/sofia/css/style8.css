@@ -1,0 +1,24 @@
+.container{
+width:1230px;
+margin: 0 auto;
+margin-left: auto;
+ margin-right: auto;            
+}
+.second_heder_main{
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-top:330px;
+}
+.second_heder_inner{
+    display: flex;
+}
+.second_heder_logo{
+width: 20%;
+}
+.travel_menu{
+width: 70%;
+}
+.travel_menu{
+display: flex;
+}

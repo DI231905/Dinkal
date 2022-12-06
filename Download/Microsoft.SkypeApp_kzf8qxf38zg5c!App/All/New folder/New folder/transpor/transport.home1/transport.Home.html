@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Travel&Tour</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="https://cdn5.vectorstock.com/i/1000x1000/73/69/gold-circle-letter-s-logo-vector-14957369.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="E:\sofia\css\style9.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
+  </head>
+  <body style="margin:0;padding:0;">
+    <div class="main_manu">
+        <div class="container">
+          <div class="main_manu_inner">
+            <div class="logo_manu">
+                <a href="#"><img src="E:\transport\logo.png"></a>
+            </div>
+            <div class="travel_menu">
+                <div class="travel_inner">
+                    <ul class="travel_sub">
+                        <li class="menu_sub"><a href="#">Home</a>
+                           <ul class="sub_menu test">
+                                <li>Home 1</li>
+                                <li>Home 2</li>
+                                <li>Home 3</li>
+                                <li>Home shop</li>
+                                <li>Demo 1</li>
+                                <li>Demo 2</li>
+                                <li>Demo One Page</li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub"><a href="#">Pages</a>
+                            <ul class="sub_menu test">
+                                <li>Team</li>
+                                <li>Testimonials</li>
+                                <li>Booking</li>
+                                <li>Cart</li>
+                                <li>FAQ</li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub"><a href="#">Destination</a>
+                            <ul class="sub_menu test">
+                                <li>Destination</li>
+                                <li>Destination Details</li>
+                            </ul>
+                        </li>
+                        <li class="menu_sub"><a href="#">Tours</a>
+                            <ul class="sub_menu test">
+                                <li>Tours</li>
+                                <li>Tours Offers</li>                               
+                            </ul>
+                        </li>
+                        <li class="menu_sub"><a href="#">About Us</a></li>
+                        <li class="menu_sub"><a href="#">Blog</a>
+                            <ul class="sub_menu test">
+                                <li>Blog Style</li>
+                                <li>Blog Style One</li>
+                                <li>Blog Style two</li>
+                                <li>Blog Style three</li>                                                               
+                            </ul>
+                        </li>
+                        <li class="menu_sub"><a href="#">Contact Us</a></li>
+                    </ul>                        
+                </div>   
+            </div>
+            <div class="search_icon">
+               <a><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+<script type="text/javascript">
+  
+  var btn = $('.top-visible');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('arrowshow');
+  } else {
+    btn.removeClass('arrowshow');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+$( 'li.tm_menu a' ).on( 'click', function(e){
+  var href = $(this).attr( 'href' );
+  $( 'html, body' ).animate({
+    scrollTop: $( href ).offset()
+  }, '300' );
+  e.preventDefault();
+});
+$('.slider').slick({
+  infinite: true,
+  slidesToShow: 1, // Shows a three slides at a time
+  slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+  arrows: true, // Adds arrows to sides of slider
+  dots: true ,// Adds the dots on the bottom
+  adaptiveHeight: true
+});
+
+</script>

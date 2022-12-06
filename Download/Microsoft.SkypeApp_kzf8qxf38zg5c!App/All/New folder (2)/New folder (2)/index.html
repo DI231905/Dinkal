@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>indiadox</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image/logo.png">
+</head>
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    max-width: 100%;
+    transition: all 1s ease 0s;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    color: #129300;
+}
+
+a:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out 0.1s;
+    -moz-transition: all 0.3s ease-in-out 0.1s;
+    -ms-transition: all 0.3s ease-in-out 0.1s;
+    -o-transition: all 0.3s ease-in-out 0.1s;
+    transition: all 0.3s ease-in-out 0.1s;
+    text-decoration: none;
+}
+
+b {
+    font-family: 'HelveticaNeueLTStd-Bd';
+}
+
+.bold h4 {
+    font-family: 'HelveticaNeueLTStd-Md' !important;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.white-text * {
+    color: #fff;
+}
+
+
+.lowerCase {
+    text-transform: lowercase !important;
+}
+
+.headerFix {
+    background: rgba(255, 255, 255, 0.99);
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.headerFix .white-layer {
+    top: -300px;
+}
+
+/*.headerFix .header-top{
+    display: none;
+}*/
+
+.headerFix .navbar-brand {
+    display: block;
+}
+
+.headerFix .navbar-brand img {
+    width: 250px;
+    margin-top: 6px;
+}
+
+.headerFix .navbar {
+    padding-top: 13px;
+}
+
+.headerFix .navbar-default .navbar-nav > li > a {
+    line-height: 54px;
+    color: #000;
+
+}
+
+.headerFix .navbar-default .navbar-nav > li:last-of-type a {
+    border-color: #129300;
+    color: #fff;
+    background-color: #129300;
+
+}
+
+.headerFix .navbar-default .navbar-nav > li:last-of-type a:hover {
+    border-color: #129300;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.headerFix .navbar-default .navbar-nav > li:last-of-type {}
+
+.white-layer {
+    position: absolute;
+    top: 0px;
+    width: 844px;
+    height: 266px;
+    background: url(../image/white-layer.png);
+    padding-top: 95px;
+    padding-left: 106px;
+    z-index: 999;
+    left: 85px;
+    -webkit-transition: all 0.3s ease-in-out 0.1s;
+    -moz-transition: all 0.3s ease-in-out 0.1s;
+    -ms-transition: all 0.3s ease-in-out 0.1s;
+    -o-transition: all 0.3s ease-in-out 0.1s;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    position: fixed;
+    z-index: 999;
+    padding: 0px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    top: 0px;
+
+}
+
+.header-top {
+    background: #129300;
+    padding: 16px 0px 11px;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+}
+
+
+.header-top ul {
+    display: inline-block;
+    float: right;
+}
+
+.header-top ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'HelveticaNeueLTStd-Lt';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-top ul.contact {
+    margin-right: 8px;
+}
+
+.header-top ul.contact li {
+    padding: 0px 10px;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+}
+
+.header-top ul.social li {
+    display: inline-block;
+}
+
+.header-top ul.contact li::after {
+    content: "|";
+    position: absolute;
+    right: 0px;
+    color: inherit !important;
+}
+
+ul.social li:not(:last-child) {
+    padding: 0 4px;
+}
+
+ul.social .fa {
+    background: #fff;
+    color: #129300;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    padding: 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+ul.social .fa-facebook {
+    padding-left: 8px;
+}
+
+.navbar-default {
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.navbar {
+    line-height: none;
+    margin: 0px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    min-height: inherit;
+    padding-top: 40px;
+}
+
+.navbar-brand {
+    height: auto;
+    padding: 0px;
+    display: none;
+}
+
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
+.navbar-nav.mobile-view {
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+
+.navbar-default .navbar-nav > li {
+    font-family: 'HelveticaNeueLTStd-Lt';
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0px;
+  /*  margin: 0px 14px;*/
+    margin: 0px 12px;
+    position: relative !important;
+}
+
+.navbar-default .navbar-nav > li:last-of-type {
+    margin: 0px;
+    /*font-family: 'HelveticaNeueLTStd-Lt', Helvetica, Arial, sans-serif;*/
+    font-family: Arial, sans-serif;
+}
+
+.navbar-default .navbar-nav > li:last-of-type a {
+    /*font-family: 'HelveticaNeueLTStd-Romant', Helvetica, Arial, sans-serif;*/
+    font-family: Arial, sans-serif;
+    border: 2px solid #fff;
+    font-size: 20px;
+    line-height: 46px;
+    margin: 0px;
+    padding: 0px 20px 0px 55px;
+    border-radius: 5px;
+    background: url(../img/arrow-icon.png) no-repeat;
+    background-position: 15px 10px;
+}
+
+.navbar-default .navbar-nav > li:last-of-type a:hover,
+.navbar-default .navbar-nav > li:last-of-type a:focus {
+    background-color: #fff !important;
+    border: 2px solid #fff;
+    color: #398439;
+    background-position: 20px 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding: 0px 0px;
+    line-height: 50px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #129300;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fff !important;
+}
+
+/*.navbar-default .navbar-nav > li.menu-item-has-children:hover{
+    background:#fff;
+    color: #000!important;
+}*/
+
+.sub-menu {
+    display: none;
+    padding: 0;
+    position: absolute;
+   min-width: 220px;
+    
+    border-top: 2px solid #3fa230;
+    background: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.20);
+    padding-bottom: 8px;
+
+}
+#menu-item-9666 .sub-menu{
+    min-width: 400px;
+}
+.sub-menu li {
+    position: relative !important;
+}
+
+.sub-menu li a {
+    color: #000;
+    font-family: 'HelveticaNeueLTStd-Lt';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    /*padding: 8px 15px; */
+    padding: 8px 15px 2px;
+    display: block;
+    position: relative !important;
+}
+
+.sub-menu li a:hover,
+.sub-menu li a:focus {
+    color: #129300;
+}
+
+/*.sub-menu .sub-menu {
+    top: 12px;
+    left: 100%;
+
+
+}*/
+.sub-menu .sub-menu{
+    display: block;
+position: relative !important;
+left:0px !important;
+top:0px !important;
+width: 100% !important;
+min-width: 100% !important;
+box-sizing: border-box !important;
+border: 0px !important;
+box-shadow: none !important;
+
+}
+.sub-menu .sub-menu{
+    padding-left: 17px !important;
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
+.navbar-default .navbar-nav li:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu li.menu-item-has-children:after {
+    content: "\f105";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: inherit;
+    color: #129300;
+    padding: .5em;
+    display: inline-block;
+    font-weight: 600;
+    display: none !important;
+}
+.navbar-default .navbar-nav > li#menu-item-9666.menu-item-has-children .sub-menu > li a{
+    font-family: Arial, sans-serif !important;
+    font-weight: 600;
+    
+}
+.navbar-default .navbar-nav > li#menu-item-9666.menu-item-has-children .sub-menu > li .sub-menu > li a{
+    font-weight: normal;
+    padding: 5px 15px;
+    position: relative;
+    font-family: 'HelveticaNeueLTStd-Lt' !important;
+    line-height: 15px;
+    font-size: 14px !important;
+}
+.navbar-default .navbar-nav > li#menu-item-9666.menu-item-has-children .sub-menu > li .sub-menu > li .sub-menu > li a{
+    font-size:13px !important;
+}
+.navbar-default .navbar-nav > li.menu-item-has-children .sub-menu > li .sub-menu > li a::before{
+    content: "•";
+    position: absolute;
+    left: 5px;
+    font-size: inherit;
+    display: inline-block;
+}
+#menu-item-9666 .sub-menu  .sub-menu > li.menu-item-10959 > a,
+#menu-item-9666 .sub-menu  .sub-menu > li.menu-item-10961 > a{
+   color:#107f00;
+   font-weight: bold !important;
+}
+#menu-item-9666 .sub-menu  .sub-menu > li.menu-item-10959 > a::before,
+#menu-item-9666 .sub-menu  .sub-menu > li.menu-item-10961 > a::before,
+#menu-item-9551 .sub-menu > li a::before,
+#menu-item-10243 .sub-menu > li a::before{
+    display: none;
+}
+
+
+.jumbotron {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    position: relative;
+    max-height: 955px;
+    overflow: hidden;
+    position: relative;
+    background: Url('../img/new-banner.jpg') no-repeat;
+
+    background-position: center center;
+    background-size: cover;
+}
+
+#video-background {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+
+
+}
+
+#olark-wrapper .olark-launch-button svg[aria-label~="envelope"] {
+    position: relative;
+    opacity: 0 !important;
+}
+
+#olark-wrapper .olark-launch-button > svg[aria-label~="envelope"] + div + div::after {
+    content: "\f27a";
+    display: inline-block !important;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 32px !important;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    color: #fff;
+    left: 20px;
+    top: 6px;
+}
+
+.jumbotron::after {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: #000;
+    opacity: .6;
+    z-index: 1;
+}
+
+.jumbotron .bannerImg {
+    width: 1920px;
+    max-width: none;
+    position: relative;
+    left: 50%;
+    top: 0%;
+    -ms-transform: translateY(-0%) translateX(-50%);
+    -webkit-transform: translateY(-0%) translateX(-50%);
+    transform: translateY(-0%) translateX(-50%);
+}
+
+@media (max-width: 1366px) {
+    .header-top {
+        background: #129300;
+        padding: 10px 0px 7px;
+    }
+
+    .white-layer {
+        position: absolute;
+        width: 650px;
+        height: 220px;
+        background: url(../image/white-layer.png) no-repeat;
+        background-size: auto auto;
+        padding-top: 78px;
+
+        padding-left: 55px;
+        z-index: 999;
+        left: 11px !important;
+        background-size: 100%;
+    }
+
+    .white-layer img {
+        width: 240px;
+    }
+
+    .navbar {
+        padding-top: 24px;
+    }
+
+    .navbar-default .navbar-nav > li {
+        font-size: 13px;
+        /*margin: 0px 8px;*/
+         margin: 0px 6px;
+    }
+
+    .navbar-default .navbar-nav > li:last-of-type a {
+        font-size: 14px;
+        padding: 0px 10px 0px 50px;
+    }
+
+    .bg-primary {
+        padding: 60px 0px;
+        background-size: 1600px
+    }
+
+    /*.rectrangle-box {
+        width: 400px;
+        height: 350px;
+        padding-top: 210px;
+        left: -10px;
+        background-size: 400px;
+    }
+    .rectrangle-box2 {
+        width: 400px;
+        height: 350px;
+        padding-top: 50px;
+        left: -6px;
+        background-size: 400px;
+    }
+    .rectrangle-box::before {
+        background-size: 100px;
+        background-position: 42% center;
+    }
+    .rectrangle-box2::before{
+        background-size: 155px;
+    }
+    .rectrangle-box3::before{
+        background-size: 150px;
+    }*/
+    .text-box p {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .bg-info {
+        padding: 60px 0px;
+    }
+
+    h2 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .bg-success {
+        padding: 60px 0px;
+    }
+    .benefitBox p{
+        font-size: 18px !important;
+    }
+    .benefitBox h4{
+        font-size: 22px !important;
+    }
+    .benefitBox img{
+        max-width:100px !important;
+
+    }
+    .bg-success p {
+        line-height: 26px;
+        word-spacing: 0px;
+        font-size: 22px;
+    }
+
+    .company-logos {
+        padding: 60px 0px;
+    }
+
+    .company-logos .company-list li img {
+        /* height: 35px;*/
+    }
+
+    .bg-warning {
+        padding: 60px 0px;
+    }
+
+    .see-how-list li figure {
+        max-height: 200px;
+    }
+
+    .overlay-box img {
+        width: 70px;
+        margin-bottom: 15px;
+    }
+
+    /* .overlay-box {
+        padding-top: 120px;
+    }*/
+    .overlay-box h2 {
+        font-size: 26px;
+    }
+
+    .blog-sec {
+        padding: 60px 0px;
+    }
+
+    .blog-sec .thumbnail p {
+        font-size: 22px;
+    }
+
+    .footer-top {
+        padding: 30px 0px;
+    }
+
+    .footer-menu ul li {
+        font-size: 14px;
+        margin: 0px 6px;
+    }
+
+    .footer-menu ul li:last-of-type a {
+        font-size: 14px;
+        padding: 11px 10px 10px 44px;
+        line-height: 14px;
+        background-size: 24px;
+        background-position: 15px 10px;
+    }
+
+    .footer-menu ul li:last-of-type a:hover,
+    .footer-menu ul li:last-of-type a:focus {
+
+        background-position: 18px 10px;
+    }
+
+    .footer-logo a img {
+        width: 220px;
+    }
+
+    /*Faq Style */
+    .faq-tab {
+        margin-bottom: 55px;
+    }
+
+    div.ufaq-faq-title h4 {
+        font-size: 20px !important;
+    }
+
+    .ufaq-faq-div {
+        padding: 10px 0 !important;
+    }
+
+    .ewd-ufaq-post-margin-symbol {
+        top: 4px !important;
+    }
+
+    .tab-content .tab-pane > p {
+        font-size: 30px;
+    }
+
+    .faq {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    div.ufaq-faq-post p {
+        font-size: 20px;
+        padding-bottom: 10px !important;
+        line-height: 25px;
+
+    }
+
+    .industries .heading h2 {
+        font-size: 30px;
+    }
+
+    /* Service*/
+    .textimonial h2 {
+        font-size: 28px;
+    }
+
+    .services {
+        padding-top: 80px;
+    }
+
+    .tab-wrapper {
+        padding-bottom: 20px;
+    }
+
+    /*Over view */
+    .designed ul {
+        margin-bottom: 50px;
+    }
+
+    .designed .heading {
+        margin-bottom: 00px;
+    }
+
+    .sensor-graph {
+        margin: 50px 0px 50px;
+    }
+
+    .graph-img {
+        /* max-width: 950px;*/
+        margin-right: 58px;
+
+    }
+
+    .sensor-graph .right-box {
+        position: absolute;
+        width: 240px;
+        right: 8%;
+        top: 52px;
+        height: 240px;
+        background-size: 240px;
+    }
+
+    .sensor-graph .left-top {
+        width: 320px;
+        background-size: 100px;
+    }
+
+    .sensor-graph .left-bottom {
+        width: 320px;
+        background-size: 100px;
+    }
+
+    .designed ul li img {
+        margin-right: 10px;
+    }
+
+    .designed .content-box p {
+        padding-bottom: 30px;
+    }
+
+    /*End Over view */
+    /*===============Gsl start======================*/
+
+    .software-sec p,
+    .technology-sec p {
+        padding-bottom: 15px;
+    }
+
+    .gunshot-list li {
+        font-size: 22px;
+    }
+
+    .customizable ul li {
+        margin: 0px 50px;
+    }
+
+    .customizable h2 {
+        margin-bottom: 25px;
+    }
+
+    .border-gap {
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+
+    .cloud-list img {
+        width: 150px;
+    }
+
+    .secury-round .rethinkSecurity-box-img {
+        margin: 0 auto 30px;
+        padding: 30px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .secury-round .rethinkSecurity-box-img .circle-border {
+        height: 200px;
+        width: 200px;
+    }
+
+    .secury-round .rethinkSecurity-box-img .circle.ani {
+        height: 200px;
+        width: 200px;
+    }
+
+    .cloud-list p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    /*===============GSL end======================*/
+    /*Awards page*/
+    section.award,
+    .security,
+    .winner,
+    .awar-blog {
+        padding: 110px 0px 0px;
+    }
+
+    .awar-blog .btn {
+        bottom: 30px;
+    }
+
+    .winner .winner-content h2:not(:last-child) {
+        padding-bottom: 20px !important;
+    }
+
+    .award-content ul li {
+        font-size: 22px;
+    }
+
+    .winning .award-box p {
+        padding-bottom: 15px;
+    }
+
+    .assis-content {
+        padding-top: 20px;
+    }
+
+    /*PSU PAge */
+    .white-bar {
+        top: 55px;
+    }
+
+    .psu {
+        padding-bottom: 80px !important;
+    }
+
+    /**/
+    .additionalContant-box {
+        min-height: 348px !important;
+    }
+
+    /*about page*/
+    .aboutUs .sec-gap2 {
+        padding-top: 20px;
+    }
+
+    .aboutUs .sec-gap {
+        padding-top: 20px;
+    }
+
+    .aboutUs .heading h2 {
+        font-size: 35px !important;
+    }
+
+    .mapSec::before {
+        width: 12%;
+    }
+
+    .mapSec::after {
+        width: 13%;
+    }
+
+    /*Team Members*/
+    .team-members h3 {
+        font-size: 24px;
+    }
+
+    .team-members p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .bg-info.logo-sec h2 {
+        /*font-size:45px;*/
+    }
+
+    /*Product Page*/
+    .fanel-graphs p {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+
+    .banner2 img {
+        width: 1400px;
+    }
+
+    #step1 .fanel-img .top-img {
+        bottom: -38px;
+    }
+
+
+    /*Case Study*/
+    .popup-content ul li h3 {
+        font-size: 24px;
+    }
+
+    .popup-content ul li p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .popup-content ul li {
+        padding-left: 110px;
+    }
+
+    .information-popup,
+    .download-popup {
+        padding: 40px;
+    }
+
+    .popup-content .btn-download {
+        margin-left: 110px;
+    }
+
+    .Industrial p {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 25px;
+    }
+
+    /*Product details section */
+    .bottom-content-main-wrapper p {
+        line-height: 26px;
+        font-size: 20px;
+    }
+
+    .bottom-content-main-wrapper ul li,
+    .bottom-content-main-wrapper ol li {
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 18px;
+        background-position: left 7px;
+    }
+
+    .bottom-content-main-wrapper ul li ul li {
+        background-position: left 7px;
+    }
+
+    .bottom-content-main-wrapper h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 28px;
+    }
+
+    #myModal .modal-dialog,
+    #error-msg-model .modal-dialog {
+        width: 600px;
+    }
+
+    #myModal .modal-content,
+    #error-msg-model .modal-content {
+        padding: 40px 80px;
+    }
+
+    .page-template-templete-LPR .arrow-sec {
+        padding-top: 62%;
+    }
+
+    .page-template-templete-LPR .cloud-list {
+        padding-top: 12px;
+    }
+
+    .page-template-template-isc-west .bannerText h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .page-template-template-isc-west .bannerText {
+        top: 42%;
+    }
+    .single-products .secgap {
+    padding: 30px 0px;
+}
+    .product-heading h2{
+        font-size:28px;
+    }
+    .bg-success .deploy-list li h4{
+        font-size:20px;
+    }
+    .page-template-templete-Investor-Relations .sideBarSec{
+        margin-top: 52px;
+    }
+    .page-template-templete-Investor-Relations .bold h4{
+        font-size:28px;
+    }
+   /* .customize-graphs h2 {
+        font-size: 26px !important;
+    }*/
+
+    .graph-text {
+        max-width: 340px;
+        top: 105px;
+    }
+    .page-template-template-edge-security .deploy-list li img{ 
+        max-width: 80px !important;
+
+    }
+    .testimonials .box-video h3 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+}
+}
+
+
+
+</style>
+<body>
+<header class="">
+            <div class="white-layer">
+                <a href="https://v5systems.us"><img src="https://v5systems.us/wp-content/uploads/2019/01/nlogo.png" alt="v5systems"></a>
+
+            </div>
+
+            <div class="header-top ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/v5systems/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/v5systems/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/v5-systems" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCDkAanzERsJ7X2JkgFM86_A" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                 <li> <a href="https://v5systems.us/faq/">Faq</a></li>
+                                <li> <a href="https://v5systems.us/contact-us/">Contact Us</a></li>
+                                <li><a href="tel:510.573.3346">510.573.3346</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                        <a class="navbar-brand" href="https://v5systems.us"><img src="https://v5systems.us/wp-content/uploads/2019/01/nlogo.png" alt="logo"></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       <div class="navbar-right">
+                        <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navbar-nav mobile-view"><li id="menu-item-10869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-10869"><a href="https://v5systems.us/">Home</a></li>
+<li id="menu-item-7232" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6348 current_page_item menu-item-has-children menu-item-7232"><a href="https://v5systems.us/about-us/" aria-current="page">About us</a>
+<ul class="sub-menu">
+    <li id="menu-item-7231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7231"><a href="https://v5systems.us/executive-team/">Executive Team</a></li>
+    <li id="menu-item-7237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7237"><a href="https://v5systems.us/partners/">Partners</a></li>
+    <li id="menu-item-10426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10426"><a href="https://v5systems.us/investor-relations/">Investor Relations</a></li>
+    <li id="menu-item-10520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10520"><a href="https://v5systems.us/career-opportunities/">Career Opportunities</a></li>
+</ul>
+<span class="menu-toggle"></span></li>
+<li id="menu-item-5599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5599"><a href="https://v5systems.us/industries/">Industries</a>
+<ul class="sub-menu">
+    <li id="menu-item-10689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10689"><a href="https://v5systems.us/school-campus-security-solutions/">Schools/Campus</a></li>
+    <li id="menu-item-10690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10690"><a href="https://v5systems.us/oilandgas/">Oil &amp; Gas</a></li>
+    <li id="menu-item-10691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10691"><a href="https://v5systems.us/law-enforcement/">Law Enforcement</a></li>
+    <li id="menu-item-10692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10692"><a href="https://v5systems.us/stateandgovernment/">State &amp; Government</a></li>
+    <li id="menu-item-10693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10693"><a href="https://v5systems.us/military/">Military</a></li>
+    <li id="menu-item-10694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10694"><a href="https://v5systems.us/transportation/">Transportation</a></li>
+    <li id="menu-item-10695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10695"><a href="https://v5systems.us/sporting-venues/">Sporting Venues</a></li>
+    <li id="menu-item-10696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10696"><a href="https://v5systems.us/enterprise/">Enterprise</a></li>
+    <li id="menu-item-10697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10697"><a href="https://v5systems.us/agriculture/">Agriculture</a></li>
+</ul>
+<span class="menu-toggle"></span></li>
+<li id="menu-item-9666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9666"><a href="https://v5systems.us/products-2/">Products</a>
+<ul class="sub-menu">
+    <li id="menu-item-7470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7470"><a href="https://v5systems.us/security-products/">Portable Outdoor Edge Security</a>
+    <ul class="sub-menu">
+        <li id="menu-item-10959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10959"><a href="https://v5systems.us/portable-outdoor-gunshot-detection/">Portable Outdoor Gunshot Detection</a>
+        <ul class="sub-menu">
+            <li id="menu-item-10960" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10960"><a href="https://v5systems.us/gsl/">OnSound Acoustic Gunshot Detection</a></li>
+        </ul>
+<span class="menu-toggle"></span></li>
+        <li id="menu-item-10961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10961"><a href="https://v5systems.us/security-products/">Portable Outdoor Edge Surveillance</a>
+        <ul class="sub-menu">
+            <li id="menu-item-10962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10962"><a href="https://v5systems.us/products/onsight-portable-surveillance-unit/">OnSight Portable Surveillance Unit</a></li>
+            <li id="menu-item-10963" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10963"><a href="https://v5systems.us/products/onsight-portable-surveillance-unit-with-video-analytics/">OnSight+ Portable Surveillance Unit with Video Analytics</a></li>
+            <li id="menu-item-10964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10964"><a href="https://v5systems.us/products/onsight-portable-license-plate-reader/">OnSight Portable License Plate Reader</a></li>
+            <li id="menu-item-10965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10965"><a href="https://v5systems.us/products/onsight-portable-camera-adaptive-platform/">OnSight Portable Camera Adaptive Platform</a></li>
+        </ul>
+<span class="menu-toggle"></span></li>
+    </ul>
+<span class="menu-toggle"></span></li>
+    <li id="menu-item-9551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9551"><a href="https://v5systems.us/power-product/">Portable Outdoor Edge Power</a>
+    <ul class="sub-menu">
+        <li id="menu-item-10956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10956"><a href="https://v5systems.us/products/onpower-portable-battery-unit/">OnPower Portable Battery Unit</a></li>
+        <li id="menu-item-10957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10957"><a href="https://v5systems.us/products/onpower-portable-battery-unit-2/">OnPower+ Portable Battery Unit with Remote Insights</a></li>
+        <li id="menu-item-10958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10958"><a href="https://v5systems.us/products/onpower-portable-auxiliary-unit/">OnPower Portable Auxiliary Battery Unit</a></li>
+    </ul>
+<span class="menu-toggle"></span></li>
+    <li id="menu-item-10243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10243"><a href="https://v5systems.us/computing-products/">Portable Outdoor Edge Computing</a>
+    <ul class="sub-menu">
+        <li id="menu-item-10954" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10954"><a href="https://v5systems.us/products/oniq-portable-edge-computing-unit-with-dell-gateway/">OnIQ Portable Edge Computing Unit with Dell Gateway</a></li>
+        <li id="menu-item-10955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10955"><a href="https://v5systems.us/products/oniq-portable-edge-computing-unit-with-hpe-gateway/">OnIQ Portable Edge Computing Unit with HP Gateway</a></li>
+    </ul>
+<span class="menu-toggle"></span></li>
+    <li id="menu-item-10997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10997"><a href="https://v5systems.us/add-on-equipment/">ADD-ON EQUIPMENT</a></li>
+</ul>
+<span class="menu-toggle"></span></li>
+<li id="menu-item-5471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5471"><a href="https://v5systems.us/services/">Services</a></li>
+<li id="menu-item-9406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9406"><a href="https://v5systems.us/resources/">Resources</a>
+<ul class="sub-menu">
+    <li id="menu-item-9384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9384"><a href="https://v5systems.us/technology/">V5 Technology</a></li>
+    <li id="menu-item-9385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9385"><a href="https://v5systems.us/articles/">Articles</a></li>
+    <li id="menu-item-9386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9386"><a href="https://v5systems.us/case-studies/">Case Studies</a></li>
+    <li id="menu-item-9390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9390"><a href="https://v5systems.us/press-releases/">Press Releases</a></li>
+    <li id="menu-item-9391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9391"><a href="https://v5systems.us/videos/">Videos</a></li>
+    <li id="menu-item-11206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11206"><a href="https://v5systems.us/testimonials/">Testimonials</a></li>
+    <li id="menu-item-9409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9409"><a href="https://v5systems.us/blog/">Blog</a></li>
+    <li id="menu-item-3266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3266"><a href="https://v5systems.us/resource-library/">Resource Library</a></li>
+    <li id="menu-item-9392" class="displaynone menu-item menu-item-type-post_type menu-item-object-page menu-item-9392"><a href="https://v5systems.us/monthly-buzz/">Monthly Buzz</a></li>
+</ul>
+<span class="menu-toggle"></span></li>
+<li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6433"><a href="https://v5systems.us/pricing/">Pricing</a>
+<ul class="sub-menu">
+    <li id="menu-item-7592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7592"><a href="https://v5systems.us/where-to-buy/">Where To Buy</a></li>
+    <li id="menu-item-9519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9519"><a href="https://v5systems.us/schedule-demo/">Schedule Demo</a></li>
+</ul>
+<span class="menu-toggle"></span></li>
+<li id="menu-item-11144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11144"><a href="https://v5systems.us/request-a-quote/">REQUEST A QUOTE</a></li>
+</ul></div>                           </div>
+
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- /.container-fluid -->
+            </nav>
+
+        </header>	
+
+   

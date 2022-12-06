@@ -1,0 +1,17 @@
+Name* : text box
+Adress* : text area
+Gender* : Radio
+Email* : textbox
+Mobile* : textbox
+City* : Dropdown(option)
+Hobies* : check1 - Singing
+		 check2 - Dancing
+		 check3 - Comady
+		 check4 - Travelling
+
+		 SUBMIT
+
+		 Validations  
+
+		1. All fields mandatory
+		how to get value of selected radio

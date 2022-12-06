@@ -1,0 +1,462 @@
+<html>
+<head>
+  <title>admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+</head>
+<body class="body"> 
+  <div class="row">
+    <div class="col-lg-2">
+        <header class="page-header" style="overflow: scroll;">
+      <nav>
+        <a href="index.html"class="logo">
+           <img src="" alt="">
+           <p>testing</p>
+        </a>
+         <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Dashboard 1</a>
+              <a href="#">Dashboard 2</a>
+              <a href="#">Dashboard 3</a>
+              <a href="#">Dashboard 4</a>
+            </div>
+        </div>
+        <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-home"></i><span>Home</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Home 1</a>
+              <a href="#">Home 2</a>
+              <a href="#">Home 3</a>
+              <a href="#">Home 3</a>
+            </div>
+        </div>
+        <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-chart-pie"></i><span>Service</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Service 1</a>
+              <a href="#">Service 2</a>
+              <a href="#">Service 3</a>
+              <a href="#">Service 3</a>
+            </div>
+        </div>
+        <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-file-alt"></i><span>Product</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Product 1</a>
+              <a href="#">Product 2</a>
+              <a href="#">Product 3</a>
+              <a href="#">Product 3</a>
+            </div>
+        </div>
+        <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-image"></i><span>Gallery</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Gallery 1</a>
+              <a href="#">Gallery 2</a>
+              <a href="#">Gallery 3</a>
+              <a href="#">Gallery 3</a>
+            </div>
+        </div>
+        <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-phone-alt"></i><span>Contact</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Contact 1</a>
+              <a href="#">Contact 2</a>
+              <a href="#">Contact 3</a>
+              <a href="#">Contact 3</a>
+            </div>
+        </div>
+        <div class="main_drop">
+            <button class="dropdown-btn"><i class="fas fa-table"></i><span>FAQ</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">blog 1</a>
+              <a href="#">blog 2</a>
+              <a href="#">blog 3</a>
+              <a href="#">blog 3</a>
+            </div>
+        </div>
+      </nav>
+    </header>
+    </div>
+    <div class="col-lg-10">
+        <div class="page my-4 title1">
+        <div class="mt-5">
+            <h4 class="mb-4">Details List</h4>
+            <div class="detail">
+                <div class="form">      
+                  <form action="#" enctype="multipart/form-data" method="POST">
+                      <input type="hidden" name="_token" value="PlJy8eyMocZhnnEPAwnC7JyUYPoK2w037nXbjgGO">   
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                 <label>Image</label>
+                              </div>
+                              <div class="col-md-12">
+                                 <input type="file" name="image" onchange="readURL(this);" require="">
+                                 <img id="blah" src="#" alt="">
+                               </div>   
+                          </div>
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                 <label>Packages</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <select name="packages" value="" required="">
+                                    <option>Select Tour Type</option>
+                                    <option value="7">Domestic Packages</option>
+                                    <option value="8">International packages</option>
+                                  </select>
+                              </div>
+                          </div> 
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                  <label>Tittle</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <input type="text" placeholder="Enter Tour Tittle" name="tittle" value="" required="">
+                              </div>   
+                          </div>  
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                  <label>Type of Tour</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <select name="tour_type" value="" required="">
+                                      <option>Select Tour Type</option>
+                                      <option value="1">Family Tours</option>
+                                      <option value="2">Honeymoon Tours</option>
+                                      <option value="3">Summer Tours</option>
+                                      <option value="4">Winter Tours</option>
+                                      <option value="5">Adventure Tours</option>
+                                  </select>
+                              </div>
+                          </div>    
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                  <label>Country</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <select name="country" id="country" required="">
+                                        <option value="">Select Country</option>
+                                        <option value="1">India</option>
+                                        <option value="3">United States of America</option>
+                                        <option value="4">Japan</option>
+                                        <option value="5">United Kingdom</option>
+                                        <option value="6">Germany</option>
+                                        <option value="7">Spain</option>
+                                        <option value="8">France</option>
+                                        <option value="9">Italy</option>
+                                        <option value="10">Greece</option>
+                                        <option value="11">UAE</option>
+                                        <option value="12">Maldives</option>
+                                  </select>
+                              </div>
+                              <input type="hidden"name="_token"value=" "> 
+                          </div>  
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                  <label>City</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <select name="city" id="city" required="">
+                                      <option value="">Select City</option>        
+                                  </select> 
+                              </div>
+                          </div>
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                  <label>Days</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <input type="number" placeholder="Enter Days" name="numberofday" value="" required="">
+                              </div>
+                          </div>
+                          <div class="part">
+                              <div class="col-md-12 label">
+                                  <label>Price</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <input type="number" placeholder="Enter Price Number" name="price" value="" required="">
+                              </div>   
+                          </div>
+                          <div class="part part1">
+                              <div class="col-md-12 label">
+                                  <label>short Description</label>
+                              </div>
+                              <div class="col-md-12 data">
+                                  <textarea placeholder="Enter text.." name="short_desc" value="" required=""></textarea>
+                              </div>   
+                          </div>
+                          <div class="part part1">
+                            <div class="col-md-12 label">
+                                <label>Days Information</label>
+                            </div>
+                            <div class="col-md-12 data data1">
+                                <div class="days data1">
+                                    <textarea name="day" placeholder="please enter full day information" autocomplete="off" required=""></textarea>
+                                </div>
+                                <button id="removeRow" type="button" class="btn-remove">Remove</button>
+                                 <div id="newRow"></div>
+                                <button id="addRow" type="button" class="btn-remove btn-add1">Add days</button>
+                            </div>
+                          </div> 
+                          <div class="part part1">
+                            <div class="col-md-12 label">
+                                <label>Inclusion</label>
+                            </div>
+                            <div class="col-md-12 data">
+                                <textarea placeholder="Enter text.." name="inclusion" value=""></textarea>
+                            </div>   
+                        </div>
+                        <div class="part part1">
+                            <div class="col-md-12 label">
+                                <label>Exclusion</label>
+                            </div>
+                            <div class="col-md-12 data">
+                                <textarea placeholder="Enter text.." name="exclusion" value="" required=""></textarea>
+                            </div>   
+                        </div>
+                        <div class="part part1">
+                            <div class="col-md-12 label">
+                                <label>General Information</label>
+                            </div>
+                            <div class="col-md-12 data">
+                                <textarea placeholder="Enter text.." name="general_info" value="" required=""></textarea>
+                            </div>   
+                        </div>
+                        <div class="part part1">
+                            <div class="col-md-12 label">
+                                <label>Long Description</label>
+                            </div>
+                            <div class="col-md-12 data">
+                                <textarea placeholder="Enter text.." name="long_desc" value="" required=""></textarea>
+                            </div>   
+                        </div>
+                        <div class="upload">
+                            <button class="btn21">Upload</button> 
+                            <a href="#">Back to Home?</a>       
+                        </div>
+                    </form>       
+                </div>  
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+        $("#addRow").click(function () {
+            var html = '';
+            html += '<div class="days">';
+            html += ' <textarea name="days[]"  placeholder="please enter full day information" autocomplete="off"></textarea>';
+            html += '<button id="removeRow" type="button" class="btn-remove">Remove</button>';
+            html += '</div>';
+            $('#newRow').append(html);
+        });
+        $(document).on('click', '#removeRow', function () {
+            $(this).closest('.days').remove();
+        });
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $(".dashboard-page").show();
+            $(".hosting-page").hide();
+        });
+
+        $(".user-details").click(function(){
+            $(".main-menu-content").slideToggle("slow");
+        })
+    });
+
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(120)
+                        .height(120);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+     $(document).ready(function(){
+
+            $('select[name="country"]').on('change',function(){
+                var id=$(this).val();
+                   console.log(id);
+                if(id){
+                   $.ajax({
+                     url:'getcity/'+id,
+                     type:'GET',
+                     dataType:'json',
+              success:function(data){
+                    console.log(data);
+                       $('select[name="city"]').empty(); 
+                       $('select[name="city"]').append('<option>Select City</option>');
+                       $.each(data,function(key,value){
+                       $('select[name="city"]')
+                        .append('<option value="'+value.id+'">'+value.name+'</option>');
+                     });
+                   }
+                }); 
+              }else{
+                   $('select[name="city"]').empty();
+              }               
+            });
+        });
+        const html = document.documentElement;
+      const body = document.body;
+      const menuLinks = document.querySelectorAll(".admin-menu a");
+      const collapseBtn = document.querySelector(".admin-menu .collapse-btn");
+      const toggleMobileMenu = document.querySelector(".toggle-mob-menu");
+      const switchInput = document.querySelector(".switch input");
+      const switchLabel = document.querySelector(".switch label");
+      const switchLabelText = switchLabel.querySelector("span:last-child");
+      const collapsedClass = "collapsed";
+      const lightModeClass = "light-mode";
+
+      collapseBtn.addEventListener("click", function () {
+        body.classList.toggle(collapsedClass);
+        this.getAttribute("aria-expanded") == "true"
+          ? this.setAttribute("aria-expanded", "false")
+          : this.setAttribute("aria-expanded", "true");
+        this.getAttribute("aria-label") == "collapse menu"
+          ? this.setAttribute("aria-label", "expand menu")
+          : this.setAttribute("aria-label", "collapse menu");
+      });
+
+      toggleMobileMenu.addEventListener("click", function () {
+        body.classList.toggle("mob-menu-opened");
+        this.getAttribute("aria-expanded") == "true"
+          ? this.setAttribute("aria-expanded", "false")
+          : this.setAttribute("aria-expanded", "true");
+        this.getAttribute("aria-label") == "open menu"
+          ? this.setAttribute("aria-label", "close menu")
+          : this.setAttribute("aria-label", "open menu");
+      });
+
+      for (const link of menuLinks) {
+        link.addEventListener("mouseenter", function () {
+          if (
+            body.classList.contains(collapsedClass) &&
+            window.matchMedia("(min-width: 768px)").matches
+          ) {
+            const tooltip = this.querySelector("span").textContent;
+            this.setAttribute("title", tooltip);
+          } else {
+            this.removeAttribute("title");
+          }
+        });
+      }
+
+      if (localStorage.getItem("dark-mode") === "false") {
+        html.classList.add(lightModeClass);
+        switchInput.checked = false;
+        switchLabelText.textContent = "Light";
+      }
+
+      switchInput.addEventListener("input", function () {
+        html.classList.toggle(lightModeClass);
+        if (html.classList.contains(lightModeClass)) {
+          switchLabelText.textContent = "Light";
+          localStorage.setItem("dark-mode", "false");
+        } else {
+          switchLabelText.textContent = "Dark";
+          localStorage.setItem("dark-mode", "true");
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      document.getElementById("myBtn").onclick = function() {myFunction()};
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+            
+          for (let i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+    <script type="text/javascript">
+        document.getElementById("myBtn1").onclick = function() {myFunction1()};
+      function myFunction1() {
+          document.getElementById("myDropdown1").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        
+        if (!event.target.matches('.dropbtn1')) {
+
+          var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+            
+          for (let i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+    <script type="text/javascript">
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+    </script>
+    <script type="text/javascript">
+      const toggleButton = document.querySelector('.toggle-menu');
+      const navBar = document.querySelector('.nav-bar');
+      toggleButton.addEventListener('click', () => {
+        navBar.classList.toggle('toggle');
+      });
+</body>
+</html>

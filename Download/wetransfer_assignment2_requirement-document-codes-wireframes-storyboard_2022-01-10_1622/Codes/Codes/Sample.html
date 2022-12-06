@@ -1,0 +1,133 @@
+<html>
+   <head>
+      <link rel = "stylesheet" 
+         href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <script src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+      </script>
+      <link rel = "stylesheet" 
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+
+         <style type="text/css">
+          html, body { height: 100%; margin: 0; padding: 0; }
+          #map { height: 50%; }
+        </style>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet'/>
+
+         <title>Getaway Bloom</title>
+   </head>
+   
+   <body>
+  <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Getaway Bloom </span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Services</a>
+        <a class="mdl-navigation__link" href="">About Us</a>
+        <a class="mdl-navigation__link" href="">Contact Info</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Getaway Bloom</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="">Services</a>
+      <a class="mdl-navigation__link" href="">About Us</a>
+      <a class="mdl-navigation__link" href="">Contact</a>
+    </nav>
+
+
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">     
+      <!-- Your content goes here -->
+      <!-- Simple Textfield -->
+      <table>
+      <form action="#">
+        <tr>
+          <td>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="destination">
+          <label class="mdl-textfield__label" for="destination">Search Destination</label>
+        </div>
+        </td>
+        <td>
+        <div>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Search
+          </button>
+        </div>
+      </td>
+      </form>
+      <!-- Raised button with ripple -->
+    </tr>
+    </table>
+    </div>
+
+    <div>
+      <div id='map'></div>
+      <button onclick="panToMonashClayton()"> Pan to Monash Clayton </button>
+      <button onclick="showPath()"> Show path </button>
+      <button onclick="showPolygon()"> Show polygon </button>
+      <script>
+      
+          // This should be your own API key
+          mapboxgl.accessToken = 'pk.eyJ1IjoiYWJhYXNpdGgwNCIsImEiOiJja3g4ZDRmbHEwOXlvMm9zZWJzMjFidmp2In0.b8pBus-qjblp34X5OPLP6A';
+      
+          let caulfield = [145.0420733, -37.8770097];
+      
+          let map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v10',
+              zoom: 16,
+              center: caulfield
+          });
+  
+          // Code added here will run whenthe page loads.
+  
+          function panToMonashClayton()
+          {    
+              // Code added here will run when the "Pan to Monash Clayton" button is clicked.
+  
+              map.panTo([145.1343136,  -37.9110467]);
+  
+          }
+      
+          function showPath()
+          {
+              // Code added here will run when the "Show Path" button is clicked.
+          }
+      
+          function showPolygon()
+          {
+              // Code added here will run when the "Show Polygon" button is clicked.
+          }
+  
+          // This function checks whether there is a map layer with id matching 
+          // idToRemove.  If there is, it is removed.
+          function removeLayerWithId(idToRemove)
+          {
+              let hasPoly = map.getLayer(idToRemove)
+              if (hasPoly !== undefined)
+              {
+                  map.removeLayer(idToRemove)
+                  map.removeSource(idToRemove)
+              }
+          }
+  
+      </script>
+    </div>
+    
+  </main>
+</div>
+   
+   </body>
+</html>

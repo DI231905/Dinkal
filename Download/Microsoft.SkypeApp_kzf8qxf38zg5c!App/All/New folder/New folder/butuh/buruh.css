@@ -1,0 +1,837 @@
+.background {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 230px 0px 130px;
+    height: 700px ;
+    width: 100%;
+}
+.background_overley:after{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    background-color:#2a1a5e;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity -0.7s;
+}
+.background img{
+    object-fit:cover;
+}
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.header_middel ul{
+display: flex;
+justify-content: center;
+padding-top: 10px;
+}
+.header_left img{
+    width:100%;
+    max-width: 100%;
+    padding-top: 10px;
+}
+li.manu {
+    padding: 0 20px;
+    list-style-type: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+.manu a {
+    color: white;
+    text-decoration: none;
+}
+.manu a:hover {
+    color: #F45905;
+    text-decoration: none;
+}
+.active a{
+    color:#F45905;
+}
+.header_right{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.btn_div {
+    margin-right: 30px;
+    color: white;
+    background-color: #F45905;
+    border: none;
+    padding: 10px 30px;
+}
+.btn_div a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+.btn_div a:hover{
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+i.fa.fa-align-right {
+    color: white;
+    font-size: 30px;
+}
+.header{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #FFFFFF73;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: -100px;
+    z-index: 999;
+}
+.header_left:after {
+    content: " ";
+    display: block;
+    height: 180%;
+    width: 145%;
+    left: 0;
+    top: -20px;
+    position: absolute;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #FFFFFF73;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.header_middel:after {
+    content: " ";
+    display: block;
+    height: 180%;
+    width:101%;
+    left: 0;
+    top: -20px;
+    position: absolute;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #FFFFFF73;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.image_contain{
+    width: 100%;
+}
+.image_contain_main{
+    position: absolute;
+    top: 30%;
+    left: 9%;
+}
+.image_contain_inner h5{
+   font-family: "Fjalla One", Sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    color: #F45905;
+}
+.image_contain_inner h1{
+    font-family: "Fjalla One", Sans-serif;
+    font-size:45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    color: white;
+}
+.image_contain_inner1{
+    display: flex;
+}
+.image_contain_sub {
+    color: white;
+    margin-right: 50px;
+}
+li.image_sub_inner {
+    font-size: 20px;
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-family: "Fjalla One", Sans-serif;
+}
+ul.image_sub_main {
+    padding-left: 0;
+}
+i.fa.fa-hand-o-right {
+    padding-right: 15px;
+}
+.home_btn {
+    padding: 10px 40px;
+    border: none;
+    color: black;
+    background-color: #F45905;
+    transform: scale(1);
+}
+.home_btn:hover{
+    color: white;
+    background-color:#2a1a5e;
+    transform: scale(1.1);
+}
+button.home_btn {
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+.company_inner {
+    padding-top: 85px;
+}
+.Experience span{  
+    color: #F45905;   
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: "Fjalla One", Sans-serif;
+}
+.Experience p{
+    text-align: left;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.5;
+    font-family: "Fjalla One", Sans-serif;
+}
+.bring{
+    color:white;
+    padding: 50px 40px 50px 40px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #2a1a5e;
+    font-family: "Fjalla One", Sans-serif;
+}
+
+.bring1{
+    color: white;
+    padding: 50px 40px 50px 40px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #F45905;
+    font-family: "Fjalla One", Sans-serif;
+}
+.bring:hover{
+    background-color:#F45905;
+}
+.bring1:hover{
+    background-color:#2a1a5e;
+}
+.bring1 p,.bring p{
+    margin-top:20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 2;
+}
+.bring h3,.bring1 h3{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5p
+}
+.team{
+    position:absolute;
+    top: -75%;
+}
+.service{
+    padding:150px 0;
+    position: relative;
+}
+.service_inner1 h5{
+    color:#F45905;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.service_inner1 h2{
+    font-family: "Fjalla One", Sans-serif;
+    font-size:34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.service_inner1 p{
+    font-size: 17px;
+    font-weight:400;
+    line-height: 1.5em;
+    padding-left: 42px;
+}
+.service_inner1 span{
+    font-size: 17px;
+    font-weight:400;
+    line-height: 1.5em;
+}
+i.fa.fa-hand-o-right{
+    color:#F45905;
+    padding-right: 20px;
+    font-size: 25px;
+}
+.service_inner2{
+ padding-top: 30px;
+}
+.Worker img{
+    position: absolute;
+    top: 66%;
+    left: 25%;
+    z-index: 1;
+    padding: 5px;
+}
+.Worker h4 {
+    position: absolute;
+    top: 66%;
+    left: 22%;
+    width: 27%;
+    border: 0px solid black;
+    padding: 80px 0 130px 26px;
+    background-color:#F45905;
+    color: white;
+}
+.Worker_inner span{
+    position: absolute;
+    top: 80%;
+    left: 27%;
+    width: 24%;
+    border: 0px solid black;
+    padding: 70px 0 15px 5px;
+    background-color: #2a1a5e;
+    color: white;
+}
+.Worker_inner img{
+    width: 60px;
+}
+i.fa.fa-dot-circle-o {
+    padding-right: 10px;
+}
+/*.service_inner img {
+    border-right: 13px solid #F45905;
+}*/
+button.worker_btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+}
+button.worker_btn:hover {
+    color: white;
+    background-color: #F45905;
+}
+.Worker_inner img {
+    left: 27%;
+}
+.digital_inner{
+    display: flex;
+}
+.digital_sub{
+   width: 50%;
+    text-align: center;
+    padding-top:15%;
+    background-color:#F45905;
+}
+.digital_sub1{
+    width: 50%;
+}
+.digital_sub h1 {
+    color: white;
+    width: 80%;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.digital {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.patner {
+    background-color: white;
+    padding: 60px 0;
+    border: 0px solid white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top:85%;
+    left:15%;
+}
+.patner_main h3{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.patner_inner {
+    display: flex;
+    justify-content: space-around;
+}
+.rotate-img {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+        from {
+                -webkit-transform: rotateY(0deg);
+        }
+        to {
+                -webkit-transform: rotateY(359deg);
+        }
+}
+
+.cutting{
+    position: relative;
+    padding-top:20%;
+}
+.cutting_contain_inner1{
+    display: flex;
+    padding-top: 35px;
+}
+.cutting_main p {
+    padding: 30px 0 10px 0;
+    margin-right: 50px;
+}
+li.cutting_sub_inner {
+    font-size: 20px;
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-family: "Fjalla One", Sans-serif;
+}
+ul.cutting_sub_main {
+    padding-left: 0;
+}
+i.fa.fa-hand-o-right {
+    padding-right: 15px;
+}
+.cutting_main h5{
+    color:#F45905;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    padding-top:10px;
+}
+.cutting_main h2{
+    font-family: "Fjalla One", Sans-serif;
+    font-size:33px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.cutting_main p{
+    padding: 10px 0;
+}
+.background1 {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 230px 0px 130px;
+    width: 100%;
+    height: 500px;
+}
+.supply{
+    padding:8% 0;
+    background-color: #F3F3F3
+}
+.supply_main h5{
+    color:#F45905 ;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    text-align:center;
+}
+.supply_main h2{
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.supply_main p{
+   text-align: center;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.box{
+  box-sizing: border-box;
+    padding: 25px 25px 25px 25px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgb(19 39 50 / 30%);
+    border: none;
+}
+.box.supply_sub {
+    margin-bottom: 20px;
+}
+/*.box.supply_sub1.supply_sub:hover {
+    background-color: white;
+    color: black;
+}*/
+i.fa.fa-star {
+    color: #F45905;
+    letter-spacing: 8.5px;
+}
+.supply_sub1{
+    background-color:#F45905;
+    color: white;
+}
+.supply_sub h4{
+    padding:10px 0 10px 0;
+}
+.work{
+    padding:8% 0;
+}
+.work_main h5{
+    color:#F45905 ;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    text-align:center;
+}
+.work_main h2{
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.work_main p{
+   text-align: center;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width:100%;
+    list-style: none;
+    text-align: center;
+}
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width:30%;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+figure.effect-dexter {
+    background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%); 
+}
+
+figure.effect-dexter img {
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-dexter:hover img {
+    opacity: 0.4;
+}
+
+figure.effect-dexter figcaption::after {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    height: -webkit-calc(50% - 30px);
+    height: calc(50% - 30px);
+    border: 7px solid #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+}
+
+figure.effect-dexter:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-dexter figcaption {
+    padding: 3em;
+    text-align: center;
+}
+
+figure.effect-dexter p {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-100px,0);
+}
+
+figure.effect-dexter:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.btn_main{
+    text-align: center;
+}
+.testimonal_main h5{
+    color:#F45905;
+    letter-spacing: 1.5px;
+}
+.testimonal_main h3{
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.test{
+    display: flex;
+}
+.testimonal_sub p{
+    margin: 15px 0;
+}
+.test_contan {
+    margin-left: 20px;
+}
+.test_contan span {
+    color: #F45905;
+}
+.test_div img{
+    border-radius:50%;
+    height: 70px;
+    width: 70px;
+}
+
+.slider-bottom-panel {
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.6);
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    z-index: 99;
+    border-radius: 0;
+}
+.dropdown {
+    border: 1px solid #DDD;
+}
+.dropdown, .dropup {
+    position: relative;
+}
+.slider-bottom-panel-two {
+    width: 100%;
+    position: absolute;
+    bottom: 150px;
+    z-index: 1001;
+}
+.slider-bottom-panel .dropdown button {
+    height: 50px;
+    font-size: 14px;
+    color: #555;
+}
+
+.dropdown button {
+    width: 100%;
+    text-align: left;
+    padding: 0 19px;
+    background-color: #F8F8F8;
+    color: #949494;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    position: relative;
+    height: 45px;
+    border-radius: 0;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+}
+.slider-bottom-panel .dropdown button span.drp-name {
+    font-size: 14px;
+    color: #555;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+}
+.dropdown button span.drp-name {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 16px;
+    color: #444;
+}
+.dropdown button span.drp-name {
+    position: absolute;
+    left: 15px;
+    font-size: 12px;
+    color: #949494;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+}
+.dropdown button span {
+    top: 12px;
+    right: 19px;
+}
+.slider-bottom-panel .dropdown .dropdown-menu {
+    top: 50px;
+}
+.dropdown .dropdown-menu {
+    border-radius: 0;
+    width: 100%;
+    border: none;;
+    box-shadow: none;
+    padding: 0;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.dropdown-menu li a {
+    padding: 9px 19px;
+}
+.slider-bottom-panel-btn .btn-pink {
+    width: 100%;
+    padding: 0;
+    height: 50px;
+    line-height: 3.3;
+    border-radius: 0;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    background-color: #FF4061
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+}
+.btn-default, .btn-pink, .btn-white {
+    z-index: 1;
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    color: #FFF;
+    line-height: 1.88;
+    letter-spacing: 0.6px;
+    border: none;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+
+.btn-pink {
+    color: white;
+    background-color: #FF4061 !important;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+}
+.btn-pink:hover, .btn-pink:focus {
+    color: #FFF;
+    background-color: #392D48;
+}
+.hader_position{
+    position: relative;
+}
+.dropdown-toggle::after {
+    margin-left: 21.255em !important;
+}
+.slider-bottom-panel-btn a{
+    color: white !important;
+}
