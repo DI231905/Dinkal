@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0">
+<title>Car</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/vendor.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/demo.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="gc-header-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 col-5">
+              <div class="header-top-left">
+                <div class="social-media">
+                  <ul>
+                    <li><a href="#" class="f-icon"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-skype"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-7">
+              <div class="header-top">
+                <div class="login">
+                  <ul>
+                    <li><a data-toggle="modal" data-target="#login" href="javascript:;"> Login</a></li>
+                    <li>/</li>
+                    <li><a data-toggle="modal" data-target="#signup" href="javascript:;">SignUp</a></li>
+                  </ul>
+                </div>
+                <div class="sell"> <a href="sell_used_car.html">
+                  <button class="btn btn-sell">Sell Your Used Car</button>
+                  </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sc-menu-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="navbar-header"> <a  href="#nav" id="openmenu" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a><a href="index.html" class="navbar-brand"><img class="img-responsive" src="image/logo.png" alt="Ganesh"></a> </div>
+            <div class="nav-menu">
+              <div class="navbar nav-menu" role="navigation">
+                <div class="row">
+                  <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav"  id="nav">
+                      <li ><a href="index.html">HOME </a></li>
+                      <li><a href="about.html"> ABOUT US </a></li>
+                      <li><a href="used_car.html"> USED CAR </a></li>
+                      <li><a href="#"> INSURANCE </a></li>
+                      <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="service.html">Top Services</a></li>
+                          <li><a href="service.html">Car Wash</a></li>
+                          <li><a href="service.html">Repair</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="gallery.html"> GALLERY </a></li>
+                      <li><a href="contact.html"> CONTACT US </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<aside>
+  <section class="page-title-area overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title  text-center">
+            <h2>SERVICE</h2>
+            <span class="title-line"><i class="fa fa-car"></i></span>
+            <ul class="menu-link">
+              <li><a href="index.html">Home</a></li>
+              <li><a>/</a></li>
+              <li class="active">Service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-content">
+            <h3>Our Services</h3>
+            <p>Lorem simply dummy is a texted of the printing costed and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.Lorem simply dummy is a texted of the printing costed and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-image1"> <img src="image/service_img.jpg" alt="serviceimg"> </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+  <section class="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="head">
+            <h3>SERVICE FORM</h3>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <form class="well form-horizontal" action="http://viralparejiya.com/gebecar/service/service_form_submit/tow_services" method="post" id="contact_form" enctype="multipart/form-data">
+            <fieldset>
+              <input name="type" class="form-control" value="TOW SERVICES" type="hidden">
+              <input type="hidden" name="redirect" value="/gebecar/service/tow_services">
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">Company Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="company_name" placeholder="Company Name" class="form-control" type="text" required="">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label">Opening Hours</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-hourglass"></i></span>
+                    <input name="opening_hours" placeholder="Opening Hours" class="form-control" type="text" required="">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">Mobile Number</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="mobile_number" placeholder="Mobile Number" class="form-control" type="number" required="" maxlength="10" minlength="10" onkeypress="phoneno()">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Text area -->
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label">Full Address</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                    <textarea class="form-control" name="full_address" placeholder="Full Address" required=""></textarea>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Text area -->
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label">Service Area</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="fa fa-area-chart"></i></span>
+                    <textarea class="form-control" name="service_area" placeholder="Service Area" required=""></textarea>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Text area -->
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label">Description</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <textarea class="form-control" name="description" placeholder="Description" required=""></textarea>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Text input--> 
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">Company Photo</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group"> <span class="input-group-addon"><i class="fa fa-file-photo-o"></i></span>
+                    <label for="uploadimage" class="form-control img">Upload Image</label>
+                    <input name="uploadimage" placeholder="Company Photo" id="uploadimage" class="form-control" type="file" style="display:none;"  required="">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-warning reset">Submit</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</aside>
+<footer>
+  <div class="up_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo"> <img src="image/flogo.jpg"> </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-lg-4">
+          <h3>About Us</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It has survived not only five centuries</p>
+          <div class="social">
+            <ul>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-skype"></span></a></li>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-5 col-lg-5">
+          <div class="row">
+            <div class="col-md-6 col-xs-6 col-sm-6 link">
+              <h3>COMPANY LINKS</h3>
+              <ul class="flinks">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="new_arrival.html">Services</a></li>
+                <li><a href="used_car.html">Used car</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6 link">
+              <h3>CUSTOMER SERVICE</h3>
+              <ul class="flinks">
+                <li class="active"><a href="javascript:;">My Account</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Insurance</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3">
+          <h3>CONTACT INFO</h3>
+          <div class="media-footer">
+            <div class="media-left">
+              <h6><span class="fa fa-home"></span></h6>
+            </div>
+            <div class="media-body">
+              <address>
+              Shoreline Parkway, Mountain
+              View,Ahmedabad,Gujarat,India
+              </address>
+            </div>
+          </div>
+          <div class="media-footer">
+            <div class="media-left">
+              <h6><span class="fa fa-envelope"></span></h6>
+            </div>
+            <div class="media-body">
+              <h5>autocar@gmail.com</h5>
+            </div>
+          </div>
+          <div class="media-footer">
+            <div class="media-left">
+              <h6><span class="fa fa-phone"></span></h6>
+            </div>
+            <div class="media-body">
+              <h5>+91-123456789</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+            in voluptate veli
+            t esse cillum dolore eu fugiat nulla pariatur. !</p>
+          <h6>© Mayur Valve System 2018  All Rights Reserved | <strong>Designed And Developed By Design And Coding</strong></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Login</h5>
+      </div>
+      <div class="modal-body">
+        <div >
+          <div class="logo"> <img src="image/user2.png" class="img img-responsive img-circle center-block"/> </div>
+          <!-- /.logo -->
+          <div class="controls">
+            <input type="text" name="username" placeholder="Username" class="form-control" />
+            <input type="password" name="username" placeholder="Password" class="form-control" />
+            <button type="button" class="btn btn-default btn-block btn-custom">Login</button>
+            <div class="account"> <a href="javascript:;" onclick="show_signup();"> Create Account</a></div>
+            <div class="remember-me">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input remember">
+                <small class="btn-rmb">Remember Me</small> </label>
+            </div>
+            <div class="forgot"> <a href="javascript:;" onclick="show_password();"> Forget password</a> </div>
+          </div>
+          <!-- /.controls --> 
+        </div>
+        <!-- /#login-box --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="forgetpass" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Forgot Password</h5>
+      </div>
+      <div class="modal-body">
+        <div class="logo"> <img src="image/padlock.png" class="img img-responsive center-block"/> </div>
+        <div >
+          <div class="controls">
+            <input type="Email" name="username" placeholder=" Enter Your Email" class="form-control" />
+            <button type="button" class="btn btn-default btn-block btn-custom">Reset Password</button>
+          </div>
+          <!-- /.controls --> 
+        </div>
+        <!-- /#login-box --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="getinquiry" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Get Inquiry</h5>
+      </div>
+      <div class="modal-body">
+        <form  action="index.html" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="text" placeholder="Name " class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="email" placeholder=" Email" class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="number" placeholder=" Mobile No" class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <textarea placeholder="Message" class="form-control input-md"></textarea>
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="button" class="btn btn-default btn-block btn-custom">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Registration</h5>
+      </div>
+      <div class="modal-body">
+        <div class="logo"> <img src="image/user2.png" class="img img-responsive img-circle center-block"/> </div>
+        <form  action="index.html" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="text" placeholder="Full Name " class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="email" placeholder=" Email" class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input name="textinput" type="date" placeholder="Birth Date " class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="number" placeholder=" Mobile No" class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="password" type="password" placeholder=" Password" class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="password" type="password" placeholder="Retype Password " class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="button" class="btn btn-default btn-block btn-custom">Create My Account</button>
+            </div>
+            <div class="account1">Have an account ?<a href="javascript:;" onclick="show_login();"> Signin</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.sidr.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/vendor.js"></script> 
+<script src= "https://cdn.zingchart.com/zingchart.min.js"></script> 
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+
+
+function show_login(){
+
+      $("#login").modal('show');
+      $("#signup").modal('hide');
+    
+    }
+function show_signup(){
+
+      $("#login").modal('hide');
+      $("#signup").modal('show');
+ }
+function show_password(){
+
+      $("#login").modal('hide');
+      $("#forgetpass").modal('show');
+ }
+
+
+
+</script>
+</body>
+</html>

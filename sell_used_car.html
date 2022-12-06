@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0">
+<title>Car</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/vendor.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/demo.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/select2.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <div class="gc-header-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 col-5">
+              <div class="header-top-left">
+                <div class="social-media">
+                  <ul>
+                    <li><a href="#" class="f-icon"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-skype"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-7">
+              <div class="header-top">
+                <div class="login">
+                  <ul>
+                    <li><a data-toggle="modal" data-target="#login" href="javascript:;"> Login</a></li>
+                    <li>/</li>
+                    <li><a data-toggle="modal" data-target="#signup" href="javascript:;">SignUp</a></li>
+                  </ul>
+                </div>
+                <div class="sell"> <a href="sell_used_car.html">
+                  <button class="btn btn-sell">Sell Your Used Car</button>
+                  </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sc-menu-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="navbar-header"> <a  href="#nav" id="openmenu" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a><a href="index.html" class="navbar-brand"><img class="img-responsive" src="image/logo.png" alt="Ganesh"></a> </div>
+            <div class="nav-menu">
+              <div class="navbar nav-menu" role="navigation">
+                <div class="row">
+                  <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav"  id="nav">
+                      <li class="active"><a href="index.html">HOME </a></li>
+                      <li><a href="about.html"> ABOUT US </a></li>
+                      <li><a href="used_car.html"> USED CAR </a></li>
+                      <li><a href="insurance.html"> INSURANCE </a></li>
+                      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="service.html">Top Services</a></li>
+                          <li><a href="service.html">Car Wash</a></li>
+                          <li><a href="service.html">Repair</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="gallery.html"> GALLERY </a></li>
+                      <li><a href="contact.html"> CONTACT US </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<aside>
+  <section class="page-title-area overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title  text-center">
+            <h2>SELL USED CAR</h2>
+            <span class="title-line"><i class="fa fa-car"></i></span>
+            <ul class="menu-link">
+              <li><a href="index.html">Home</a></li>
+              <li><a>/</a></li>
+              <li class="active">Sell Used Car</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Page Title End --> 
+      </div>
+    </div>
+  </section>
+  <section class="section-detail">
+    <div class="container">
+      <div class="row">
+        <div class="wrapper center-block panel-detail">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default panel-detailbody">
+              <div class="panel-heading active" role="tab" id="headingOne">
+                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Contact Details </a> </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body pbdetail">
+                  <div class="col-md-12 submit_free_prd_div indp_fron_form_custom_border">
+                    <form action="#" class="form-horizontal">
+                      <div class="form-body carbody">
+                        <h4>Select your city</h4>
+                        <div class="form-group">
+                          <label class="control-label col-md-3  txt-right">Select City </label>
+                          <div class="col-md-6 ">
+                            <div class="margin-bottom-10">
+                              <select class="bs-select form-control">
+                                <option>Ahmedabad</option>
+                                <option>Valsad</option>
+                                <option>Surat</option>
+                                <option>Vadodara</option>
+                                <option>Bharuch</option>
+                                <option >Rajkot</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3  txt-right">Zip Code </label>
+                          <div class="col-md-6 cus-margin-bottom-10">
+                            <input type="number" name="oldproductprice" class="form-control" placeholder=" Zip Code">
+                          </div>
+                        </div>
+                        <div class="submit_free_prd_hr"></div>
+                        <h4>Contact Detail</h4>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 txt-right">Name *</label>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Full Name" required="">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 txt-right">Mobile No<span class="required" aria-required="true"> * </span> </label>
+                          <div class="col-md-6">
+                            <input type="number"  class="form-control" placeholder="Mobile No" required="">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 txt-right">Email <span class="required" aria-required="true"> * </span> </label>
+                          <div class="col-md-6">
+                            <input type="email"  class="form-control" placeholder="Email" required="">
+                          </div>
+                        </div>
+                        <div class="submit_free_prd_hr"></div>
+                      </div>
+                      <div class="form-actions">
+                        <div class="row">
+                          <div class="col-md-offset-3 col-md-9">
+                            <button type="submit" class="btn btn-save">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default panel-detailbody">
+              <div class="panel-heading active" role="tab" id="headingOne1">
+                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne"> Car Details </a> </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
+                <div class="panel-body pbdetail">
+                  <div class="middle-section">
+                    <div class="container">
+                      <div class="row">
+                        <div class="wrapper center-block">
+                          <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                            <div class="col-md-3">
+                              <div class="selectscroll">
+                                <select class="select2">
+                                  <option>Select Year</option>
+                                  <option>2000</option>
+                                  <option>2001</option>
+                                  <option>2002</option>
+                                  <option>2003</option>
+                                  <option>2004</option>
+                                  <option>2005</option>
+                                  <option>2000</option>
+                                  <option>2001</option>
+                                  <option>2002</option>
+                                  <option>2003</option>
+                                  <option>2004</option>
+                                  <option>2005</option>
+                                  <option>2000</option>
+                                  <option>2001</option>
+                                  <option>2002</option>
+                                  <option>2003</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-3 nopm">
+                              <div class="panel panel-default">
+                                <div class="panel-heading filter-body fb1" role="tab" id="headingOne2">
+                                  <h6 class="panel-title"> <a role="button" class="panel-title" data-toggle="collapse" data-parent="#accordion2" href="#car" aria-expanded="true" aria-controls="year"> Select Your car </a> </h6>
+                                </div>
+                                <div id="car" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2">
+                                  <div class="panel-body">
+                                    <div class="tabs-wrapper">
+                                      <ul class="nav classic-tabs tabs-cyan" role="tablist">
+                                        <li class="nav-item nav-list active"> <a class="nav-link waves-light" data-toggle="tab" href="#brand" role="tab">Brand</a> </li>
+                                        <li class="nav-item nav-list"> <a class="nav-link waves-light" data-toggle="tab" href="#model" role="tab">Model</a> </li>
+                                        <li class="nav-item nav-list"> <a class="nav-link waves-light" data-toggle="tab" href="#variant" role="tab">Variant</a> </li>
+                                      </ul>
+                                    </div>
+                                    <div class="tab-content card">
+                                      <div class="tab-pane fade in active" id="brand" role="tabpanel">
+                                        <div class="selectscroll">
+                                          <div class="wrapper">
+                                            <select class=" select2">
+                                              <option>Select Your brand</option>
+                                              <option>Maruti</option>
+                                              <option>Hundai</option>
+                                              <option>Toyota</option>
+                                              <option>Honda</option>
+                                              <option>Mahindra</option>
+                                              <option>Tata</option>
+                                              <option>Ford</option>
+                                              <option>Maruti</option>
+                                              <option>Hundai</option>
+                                              <option>Toyota</option>
+                                              <option>Honda</option>
+                                              <option>Mahindra</option>
+                                              <option>Tata</option>
+                                              <option>Ford</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="model" role="tabpanel">
+                                        <div class="selectscroll">
+                                          <select class=" select2">
+                                            <option>Select Your Model</option>
+                                            <option>Maruti</option>
+                                            <option>Hundai</option>
+                                            <option>Toyota</option>
+                                            <option>Honda</option>
+                                            <option>Mahindra</option>
+                                            <option>Tata</option>
+                                            <option>Ford</option>
+                                            <option>Maruti</option>
+                                            <option>Hundai</option>
+                                            <option>Toyota</option>
+                                            <option>Honda</option>
+                                            <option>Mahindra</option>
+                                            <option>Tata</option>
+                                            <option>Ford</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="variant" role="tabpanel">
+                                        <div class="selectscroll">
+                                          <select class=" select2">
+                                            <option>select Variant</option>
+                                            <option>Maruti</option>
+                                            <option>Hundai</option>
+                                            <option>Toyota</option>
+                                            <option>Honda</option>
+                                            <option>Mahindra</option>
+                                            <option>Tata</option>
+                                            <option>Ford</option>
+                                            <option>Maruti</option>
+                                            <option>Hundai</option>
+                                            <option>Toyota</option>
+                                            <option>Honda</option>
+                                            <option>Mahindra</option>
+                                            <option>Tata</option>
+                                            <option>Ford</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="panel panel-default">
+                                <div class="panel-heading filter-body fb1" role="tab" id="headingOne3">
+                                  <h6 class="panel-title"> <a role="button" class="panel-title" data-toggle="collapse" data-parent="#accordion2" href="#color" aria-expanded="true" aria-controls="year">Select Car Color</a> </h6>
+                                </div>
+                                <div id="color" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3">
+                                  <div class="panel-body">
+                                    <div class="body-detail">
+                                      <div class="gd-col-sm-12">
+                                        <select id="colorselector">
+                                          <option value="sienna" data-color="#A0522D">sienna</option>
+                                          <option value="indianred" data-color="#CD5C5C" selected="selected">indianred</option>
+                                          <option value="orangered" data-color="#FF4500">orangered</option>
+                                          <option value="crimson" data-color="#DC143C">crimson</option>
+                                          <option value="darkorange" data-color="#FF8C00">darkorange</option>
+                                          <option value="mediumvioletred" data-color="#C71585">mediumvioletred</option>
+                                          <option value="crimson" data-color="#DC143C">crimson</option>
+                                          <option value="Silver " data-color="#C0C0C0">Silver </option>
+                                          <option value="WhiteSmoke" data-color=" #F5F5F5 ">WhiteSmoke </option>
+                                          <option value="Navy" data-color="#000080">Navy </option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="panel panel-default">
+                                <div class="panel-heading filter-body fb1" role="tab" id="headingOne4">
+                                  <h6 class="panel-title"> <a role="button" class="panel-title" data-toggle="collapse" data-parent="#accordion3" href="#more" aria-expanded="true" aria-controls="year">More</a> </h6>
+                                </div>
+                                <div id="more" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4">
+                                  <div class="panel-body morebody-detail">
+                                    <div class="col-md-12 mrb">
+                                      <div class="row">
+                                        <div class="col-md-6 nopm more-title">
+                                          <h5>Owner</h5>
+                                          <ul class="menulist">
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>First</span></a></li>
+                                            <li><a href="javascript:;"href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>Second</span></a></li>
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>Third</span></a></li>
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>Forth</span></a></li>
+                                          </ul>
+                                        </div>
+                                        <div class="col-md-6 nopm more-title">
+                                          <h5>Fuel Type</h5>
+                                          <ul class="menulist">
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>Petrol</span></a></li>
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>Diesel</span></a></li>
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>LPG</span></a></li>
+                                            <li><a href="javascript:;" class="small" data-value="option1" tabindex="-1">
+                                              <input type="checkbox" class="category-check">
+                                              <span>CNG</span></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="btn-proceed"> <a href="javascript:;" class="btn-cancle">Cancel</a> <a href="javascript:;" class="btn-proceed">Proceed</a> </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default panel-detailbody">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> car Image </a> </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body pbdetail pbimage">
+                  <div class="col-md-12">
+                    <div class="upldimg">
+                    <h4>Upload Car Images</h4>
+                    <form>
+                      <div class="form-group">
+                        <div class="col-md-12 text-center">
+                          <div class="row">
+                            <div class="imgupld">
+                              <label for="uploadimage" class="btn-upload">
+                              <img class="imgupload" src="http://placehold.it/180" alt="your image" />
+                              <div class="upl"> 
+                                <!-- <span class="fa fa-plus"></span> --> 
+                                
+                                <span>Upload Images</span></div>
+                              </label>
+                              <input type='file' name="uploadimage" id="uploadimage" style="display:none;" />
+                            </div>
+                            <button type="submit" class="btn btn-save">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</aside>
+<footer>
+  <div class="up_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo"> <img src="image/flogo.jpg"> </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-lg-4">
+          <h3>About Us</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It has survived not only five centuries</p>
+          <div class="social">
+            <ul>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-skype"></span></a></li>
+              <li><a href="javascript:;" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-5 col-lg-5">
+          <div class="row">
+            <div class="col-md-6 col-xs-6 col-sm-6 link">
+              <h3>COMPANY LINKS</h3>
+              <ul class="flinks">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="new_arrival.html">Services</a></li>
+                <li><a href="used_car.html">Used car</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6 link">
+              <h3>CUSTOMER SERVICE</h3>
+              <ul class="flinks">
+                <li class="active"><a href="javascript:;">My Account</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Insurance</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3">
+          <h3>CONTACT INFO</h3>
+          <div class="media-footer">
+            <div class="media-left">
+              <h6><span class="fa fa-home"></span></h6>
+            </div>
+            <div class="media-body">
+              <address>
+              Shoreline Parkway, Mountain
+              View,Ahmedabad,Gujarat,India
+              </address>
+            </div>
+          </div>
+          <div class="media-footer">
+            <div class="media-left">
+              <h6><span class="fa fa-envelope"></span></h6>
+            </div>
+            <div class="media-body">
+              <h5>autocar@gmail.com</h5>
+            </div>
+          </div>
+          <div class="media-footer">
+            <div class="media-left">
+              <h6><span class="fa fa-phone"></span></h6>
+            </div>
+            <div class="media-body">
+              <h5>+91-123456789</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+            in voluptate veli
+            t esse cillum dolore eu fugiat nulla pariatur. !</p>
+          <h6>© Mayur Valve System 2018  All Rights Reserved | <strong>Designed And Developed By Design And Coding</strong></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Login</h5>
+      </div>
+      <div class="modal-body">
+        <div >
+          <div class="logo"> <img src="image/user2.png" class="img img-responsive img-circle center-block"/> </div>
+          <!-- /.logo -->
+          <div class="controls">
+            <input type="text" name="username" placeholder="Username" class="form-control" />
+            <input type="password" name="username" placeholder="Password" class="form-control" />
+            <button type="button" class="btn btn-default btn-block btn-custom">Login</button>
+            <div class="account"> <a href="javascript:;" onclick="show_signup();"> Create Account</a></div>
+            <div class="remember-me">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input remember">
+                <small class="btn-rmb">Remember Me</small> </label>
+            </div>
+            <div class="forgot"> <a href="javascript:;" onclick="show_password();"> Forget password</a> </div>
+          </div>
+          <!-- /.controls --> 
+        </div>
+        <!-- /#login-box --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="forgetpass" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Forgot Password</h5>
+      </div>
+      <div class="modal-body">
+        <div class="logo"> <img src="image/padlock.png" class="img img-responsive center-block"/> </div>
+        <div >
+          <div class="controls">
+            <input type="Email" name="username" placeholder=" Enter Your Email" class="form-control" />
+            <button type="button" class="btn btn-default btn-block btn-custom">Reset Password</button>
+          </div>
+          <!-- /.controls --> 
+        </div>
+        <!-- /#login-box --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="getinquiry" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Get Inquiry</h5>
+      </div>
+      <div class="modal-body">
+        <form  action="index.html" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="text" placeholder="Name " class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="email" placeholder=" Email" class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="number" placeholder=" Mobile No" class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <textarea placeholder="Message" class="form-control input-md"></textarea>
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="button" class="btn btn-default btn-block btn-custom">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="login-box">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="cross">&times;</span> </button>
+        <h5 class="modal-title" id="getinquiryLabel">Registration</h5>
+      </div>
+      <div class="modal-body">
+        <div class="logo"> <img src="image/user2.png" class="img img-responsive img-circle center-block"/> </div>
+        <form  action="index.html" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="text" placeholder="Name" class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="email" placeholder=" Email" class="form-control input-md" required="">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input name="textinput" type="date" placeholder="Birth Date " class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="textinput" type="number" placeholder=" Mobile No" class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="password" type="password" placeholder=" Password" class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input  name="password" type="password" placeholder="Retype Password " class="form-control input-md">
+              <span class="help-block"> </span> </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="button" class="btn btn-default btn-block btn-custom">Create My Account</button>
+            </div>
+            <div class="account1">Have an account ?<a href="javascript:;" onclick="show_login();"> Signin</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.sidr.min.js"></script> 
+<script src="js/jquery-ui.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/vendor.js"></script> 
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<script src="js/jquery.magnific-popup.js"></script> 
+<script src="js/select2.js"></script> 
+<script type="text/javascript">
+  
+  $(function() {
+     
+    $('.select2').select2();
+ 
+
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 100, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( "#amount1" ).val(ui.values[ 0 ]);
+        $( "#amount2" ).val(ui.values[ 1 ]);
+      }
+    });
+        $( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+         " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+
+$(document).on('click', '.panel-heading span.clickable', function(e){
+    var $this = $(this);
+    if(!$this.hasClass('panel-collapsed')) {
+    $this.parents('.panel').find('.panel-body').slideUp();
+    $this.addClass('panel-collapsed');
+    $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+  } else {
+    $this.parents('.panel').find('.panel-body').slideDown();
+    $this.removeClass('panel-collapsed');
+    $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+  }
+})
+
+
+var options = [];
+
+$( '.dropdown-menu a' ).on( 'click', function( event ) {
+
+   var $target = $( event.currentTarget ),
+       val = $target.attr( 'data-value' ),
+       $inp = $target.find( 'input' ),
+       idx;
+
+   if ( ( idx = options.indexOf( val ) ) > -1 ) {
+      options.splice( idx, 1 );
+      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+   } else {
+      options.push( val );
+      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+   }
+
+   $( event.target ).blur();
+      
+   console.log( options );
+   return false;
+});
+
+
+ $('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.panel-heading').addClass('active');
+  });
+
+  $('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.panel-heading').removeClass('active');
+  });
+
+  $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+  
+function show_login(){
+      $("#login").modal('show');
+      $("#signup").modal('hide');
+    }
+function show_signup(){
+
+      $("#login").modal('hide');
+      $("#signup").modal('show');
+ }
+function show_password(){
+
+      $("#login").modal('hide');
+      $("#forgetpass").modal('show');
+ }
+
+
+
+
+
+
+
+
+/*
+ 
+ * Licensed under the MIT license
+ */
+
+(function($) {
+  "use strict";
+
+  var ColorSelector = function(select, options) {
+    this.options = options;
+    this.$select = $(select);
+    this._init();
+  };
+
+  ColorSelector.prototype = {
+
+    constructor : ColorSelector,
+
+    _init : function() {
+
+      var callback = this.options.callback;
+
+      var selectValue = this.$select.val();
+      var selectColor = this.$select.find("option:selected").data("color");
+
+      var $markupUl = $("<ul>").addClass("dropdown-menu").addClass("dropdown-caret");
+      var $markupDiv = $("<div>").addClass("dropdown").addClass("dropdown-colorselector");
+      var $markupSpan = $("<span>").addClass("btn-colorselector").css("background-color", selectColor);
+      var $markupA = $("<a>").attr("data-toggle", "dropdown").addClass("dropdown-toggle").attr("href", "#").append($markupSpan);
+
+      // create an li-tag for every option of the select
+      $("option", this.$select).each(function() {
+
+        var option = $(this);
+        var value = option.attr("value");
+        var color = option.data("color");
+        var title = option.text();
+
+        // create a-tag
+        var $markupA = $("<a>").addClass("color-btn");
+        if (option.prop("selected") === true || selectValue === color) {
+          $markupA.addClass("selected");
+        }
+        $markupA.css("background-color", color);
+        $markupA.attr("href", "#").attr("data-color", color).attr("data-value", value).attr("title", title);
+
+        // create li-tag
+        $markupUl.append($("<li>").append($markupA));
+      });
+
+      // append the colorselector
+      $markupDiv.append($markupA);
+      // append the colorselector-dropdown
+      $markupDiv.append($markupUl);
+
+      // hide the select
+      this.$select.hide();
+      
+      // insert the colorselector
+      this.$selector = $($markupDiv).insertAfter(this.$select);
+
+      // register change handler
+      this.$select.on("change", function() {
+
+        var value = $(this).val();
+        var color = $(this).find("option[value='" + value + "']").data("color");
+        var title = $(this).find("option[value='" + value + "']").text();
+
+        // remove old and set new selected color
+        $(this).next().find("ul").find("li").find(".selected").removeClass("selected");
+        $(this).next().find("ul").find("li").find("a[data-color='" + color + "']").addClass("selected");
+
+        $(this).next().find(".btn-colorselector").css("background-color", color);
+        
+        callback(value, color, title);
+      });
+
+      // register click handler
+      $markupUl.on('click.colorselector', $.proxy(this._clickColor, this));
+    },
+
+    _clickColor : function(e) {
+
+      var a = $(e.target);
+
+      if (!a.is(".color-btn")) {
+        return false;
+      }
+
+      this.$select.val(a.data("value")).change();
+
+      e.preventDefault();
+      return true;
+    },
+
+    setColor : function(color) {
+      // find value for color
+      var value = $(this.$selector).find("li").find("a[data-color='" + color + "']").data("value");
+      this.setValue(value);
+    },
+
+    setValue : function(value) {
+      this.$select.val(value).change();
+    },
+
+  };
+
+  $.fn.colorselector = function(option) {
+    var args = Array.apply(null, arguments);
+    args.shift();
+
+    return this.each(function() {
+
+      var $this = $(this), data = $this.data("colorselector"), options = $.extend({}, $.fn.colorselector.defaults, $this.data(), typeof option == "object" && option);
+
+      if (!data) {
+        $this.data("colorselector", (data = new ColorSelector(this, options)));
+      }
+      if (typeof option == "string") {
+        data[option].apply(data, args);
+      }
+    });
+  };
+
+  $.fn.colorselector.defaults = {
+    callback : function(value, color, title) {
+    },
+    colorsPerRow : 8
+  };
+
+  $.fn.colorselector.Constructor = ColorSelector;
+
+})(jQuery, window, document);
+
+
+$(document).on('ready', function() {
+$('#colorselector').colorselector();    
+});
+
+</script>
+</body>
+</html>
